@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/**
+@import url("payment.css");
+*/
+
+/**
+* 收银台
+**/
+.cashier{padding:1rem .5rem;}
+.cashier .list-item{line-height:1.5rem;padding:1rem 0}
+.cashier .list-item:last-child{border-bottom:1px solid #e5e5e5;}
+.cashier .list-item .item-title{font-size:12px;font-weight:300;margin-top:2px;float:left;width:90px;color:#000;}
+.cashier .list-item .item-text{width:auto;margin-right:1rem;text-align:right;}
+.cashier .list-item{-ms-box-sizing:border-box;box-sizing:border-box;}
+.cashier .list-item{display:block;position:relative;z-index:10;margin:0;-padding:10px 30px 10px 15px;width:100%;border-top:1px solid #e5e5e5;background-color:#fff;color:#000;text-align:left;vertical-align:middle;}

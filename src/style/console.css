@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/**==================== Side Menu ====================**/
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:160px;background-color:#354053;z-index:100;border-right:1px solid #e7e7eb;overflow-y:auto}
+.sidebar::-webkit-scrollbar{display:none}
+.sidebar-auto{width:auto;width:200px}
+.sidebar.sidebar-min{width:50px;transition:width .5s;-moz-transition:width .5s;-webkit-transition:width .5s;-o-transition:width .5s}
+.sidebar.sidebar-min:hover{width:200px}
+.sidebar.sidebar-min .sidebar_title{display:-none !important}
+.sidebar.sidebar-menu-dropdown{}
+.sidebar #navmorebtn:hover ~ .sidebar .navigation-rightside-menu{width:auto}
+.sidebar #navmorebtn:hover ~ .sidebar .navigation-leftside-menu{width:auto}
+.sidebar #navmorebtn:hover ~ .sidebar .navigation-bottomside-menu{height:auto}
+.sidebar_title{-padding:10px 10px 0;color:#3dc6b6;font-size:21px;line-height:30px;text-align:center}
+.logo-wrapper{width:50px;height:50px}
+.logo-wrapper:hover{background:#191d21}
+.sidebar_icon{float:right}
+.sidebar_icon a{display:block;width:30px;font-size:12px;border-radius:15px;text-align:center;cursor:pointer}
+.sidebar_icon a:hover{background-color:#303a4c}
+.sidebar_caret{vertical-align:middle}
+.sidebar_right{position:relative;right:3px}
+.sidebar_left{position:relative;left:3px}
+.sidebar_line{font-size:18px;color:#9aa6bb;vertical-align:middle}
+.sidebar_sub{margin-top:9px;font-size:12px;color:#3dc6b6;line-height:12px}
+
+/** 一级菜单 **/
+.sidebar .sidebar_menu{width:100%;overflow:hidden}
+.sidebar .sidebar_menu.active{display:block !important;border-left:4px solid #3dc6b6}
+.sidebar .sidebar_menu li a.sidebar_item{display:block;-padding-left:20px;color:#9aa6bb;font-size:14px;height:38px;line-height:38px;overflow:hidden}
+.sidebar li a i{font-size:16px;width:50px;height:40px;line-height:40px;text-align:center;display:inline-block;vertical-align:middle}
+
+/** 二级菜单 **/
+.sidebar_submenu{display:none}
+.sidebar_submenu li{display:block;color:#9aa6bb;font-size:14px;line-height:38px;border-left:4px solid transparent}
+.sidebar_submenu li a{display:block;-padding-left:36px;color:#9aa6bb;font-size:14px;line-height:38px}
+.sidebar.sidebar-min .sidebar_name,
+.sidebar.sidebar-min .sidebar_submenu li a{white-space:normal;word-wrap:break-word;word-wrap:normal;overflow-wrap:normal;word-break:keep-all;-webkit-box-orient:vertical;overflow:hidden;-color:#9aa6bb;font-size:14px;height:38px;line-height:38px}
+.sidebar .sidebar_home,
+.sidebar .sidebar_highlight,
+.sidebar li a:hover{color:white !important;background:#303a4c}
+.sidebar_menu .sidebar_active,
+.sidebar_submenu .sidebar_selected a{color:white !important;-background-color:#24303f;-background-color:#192129;-background:#303a4c}
+.sidebar .sidebar_menu li a.sidebar_item:hover{color:white}
+.sidebar_homeSelected{border-left:4px solid #3dc6b6}
+.sidebar_submenu li:hover, .sidebar_submenu .sidebar_selected{border-left:4px solid #3dc6b6;background:#303a4c}
+@media screen and (max-width:768px){
+    body.mark{background-color:rgba(55, 61, 65, .4) !important;}
+    .sidebar{width:100% !important;height:auto;bottom:auto;padding-bottom:3rem;display:none}
+    .console section.iframe_iframeContainer{width:100% !important;top:3.5rem;margin-left:0 !important}
+}
+
+/**************************************/
+.console nav.nav-bar{position:fixed;top:0;left:160px;right:0;width:calc(100% - 160px);height:50px;background-color:#354053;-index:120;overflow:auto}
+.console nav.nav-bar li{line-height:50px;padding:0 10px;color:white;flex:0 0 auto;font-size:14px;display:inline-block;border-bottom:1px solid transparent}
+.console nav.nav-bar li:hover{background:linear-gradient(to top, #1fb5c9, #2f84e3, #843be7) !important}
+.console section.iframe_iframeContainer{width:calc(100% - 50px);margin-left:50px;-background:rgba(0, 0, 0, .1)}
+
+/*右侧边栏 * 客服电话*/
+.rightbar_wrapper{overflow:hidden}
+@media screen and (max-width:1024px){
+    .rightbar_wrapper{display:none}
+}
+.rightbar_tabs{width:34px;background:#f9f9f9;border:1px solid #f2f2f2;border-right:none;border-bottom:none;overflow:hidden}
+.rightbar_wrapper:hover ~ .rightbar_container{display:block}
+.rightbar_tabs:hover ~ .rightbar_container{display:block}
+.rightbar_tab{display:inline-block;font-size:14px;color:#999999;line-height:16px;padding:10px;cursor:pointer;border-bottom:1px solid #f2f2f2}
+.rightbar_tab:hover{color:#3dc6b6}
+.rightbar_active{color:#3dc6b6;background:#ffffff}
+.rightbar_container{padding:0 15px;color:#666666;line-height:20px;background:#ffffff;-webkit-box-shadow:0 0 5px 0 rgba(0, 0, 0, .08);box-shadow:0 0 5px 0 rgba(0, 0, 0, .08);overflow:hidden;overflow-y:scroll}
+.rightbar_block{width:160px}
+.rightbar_horizon{margin:20px 0;height:1px;background:#f2f2f2}
+.rightbar_qrPadding{padding-top:188px}
+.rightbar_bizPadding{padding-top:20px}
+.rightbar_center{text-align:center}
+.rightbar_qrcode{width:100px}
+.rightbar_codeTitle{display:inline-block;color:#333333;line-height:20px;width:98px;margin-top:10px}
+.rightbar_label{height:20px}
+.rightbar_icon{width:40px;height:40px;margin-bottom:5px}
+.rightbar_info{margin-bottom:15px}
+.rightbar_title{margin-bottom:5px}
+.rightbar_content{font-size:12px}
+.rightbar_hasmore{color:#20BBA9}
+.rightbar_close{position:absolute;top:20px;left:212px}
+.rightbar_close:hover, .rightbar_close:active{color:#3dc6b6;cursor:pointer}
+
+.test{background:blueviolet;}

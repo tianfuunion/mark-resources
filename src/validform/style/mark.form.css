@@ -1,0 +1,1422 @@
+@charset "UTF-8";
+/**********************************************************************************
+* |	I Home PHP	&	Home PHP	(C) Zong Inc. Created & Modified by Zong.	| *
+* +----------------------------------------------------------------------------+ *
+* |	Copyright © 2012-2020 Zong Inc. All Rights Reserved						| *
+* +----------------------------------------------------------------------------+ *
+* |	Website:( http://www.zongdongyang.com.cn )								| *
+* +----------------------------------------------------------------------------+ *
+* |	Author:Zong <zongdongyang@126.com>										+ *
+* +----------------------------------------------------------------------------+ *
+* |	$Date:2015-10-12 10:00:00 $ 											| *
+* ********************************************************************************/
+
+.text:hover, .text:focus, textarea:hover, textarea:focus{border-color:#09c;background:#f5f9fd;}
+
+.hover:hover{background:#f5f9fd;}
+.hover:hover .addchildboard, .hover:hover .deleterow{color:#f5f9fd;}
+
+.txtnobd{border:1px solid #fff;background:#fff;cursor:pointer;}
+
+/**==================== Forms Input Ouput ====================**/
+form, .form, .mk-form{}
+.validform_error{border:#e53451 1px solid;box-shadow:0 0 2px #ea5d74}
+form legend{display:block;width:100%;padding:0;margin-bottom:20px;font-size:16px;line-height:inherit;color:rgba(0, 0, 0, .45);border:0;border-bottom:1px solid #d9d9d9}
+
+/* 表单结构 */
+form .row{line-height:1.5;padding:8px 0;overflow:visible;font-size:12px;-webkit-transition:all .3s;-moz-transition:all .3s;-ms-transition:all .3s;-o-transition:all .3s}
+form .row-hide{padding:0;height:0;overflow:hidden;line-height:0}
+form .row .row-name{float:left;display:inline;width:180px;height:18px;padding:4px 0;text-align:right;color:#666}
+form .row .row-column{margin-left:184px;line-height:26px}
+form .row .row-li{padding:0;line-height:26px}
+form .row,
+form .row .row-column,
+form .row .row-li{}
+form .row:after,
+form .row .row-column:after,
+form .row .row-li:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
+
+/* 分割线 */
+form .dashed{border-top:dashed 1px #d6d6d6;height:0;overflow:hidden;margin:10px 9px}
+
+/* 状态样式 */
+form .input.input-tip{color:#ccc !important}
+form .input.input-error{background:#fff8f3;border-color:#e00}
+form .input.input-disabled{background:#f8f8f8;border-color:#eee;color:#ccc}
+form .input:focus{background:#e9fbfe;border-color:#69c5dd}
+form .row-info.row-info-warning .icon,
+form .row-info.row-info-warning{color:#e00}
+form .row-info.row-info-success .icon{color:#6c0}
+
+/* 提示 */
+form .row-info{display:inline-block;padding:4px 8px;line-height:1.5;vertical-align:baseline;color:#999}
+form .row-info .icon{float:left;display:inline;width:16px;height:16px;overflow:hidden;margin-right:4px;line-height:1;font-size:16px;color:#00a2ca}
+label, .label, .mk-label{max-width:100%;display:inline-block;font-weight:bold;white-space:nowrap;vertical-align:baseline;text-shadow:none !important;text-overflow:ellipsis;-webkit-box-orient:vertical;box-sizing:border-box;-webkit-line-clamp:2;text-decoration:none;position:relative;margin-bottom:5px;}
+.radio-label, .checkbox-label{display:inline-block;line-height:40px;margin-right:15px}
+.label.radius{border-radius:3px}
+.label.round{border-radius:1000px}
+.label.alert{background-color:#c60f13;color:white}
+.label.success{background-color:#5da423;color:white}
+.label.secondary{background-color:#f37872;color:#333333}
+
+/* 大尺寸form */
+form.form-l .row{line-height:2;padding:12px 0;font-size:14px}
+form.form-l .row .row-name{height:28px;padding:4px 0}
+form.form-l .row .row-li{line-height:2.57}
+form.form-l .input{height:28px;line-height:2}
+form.form-l textarea.input{height:auto;vertical-align:top}
+form.form-l select{height:36px;padding:5px 0;font-size:14px;line-height:2.57;}
+form.form-l .row-info{padding:9px 8px;line-height:1.5;font-size:12px}
+input::-webkit-inner-spin-button{display:none}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button{display:none}
+input::-ms-clear, input::-ms-reveal{display:none}
+input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill{box-shadow:inset 0 0 0 1000px #fff;-moz-box-shadow:inset 0 0 0 1000px #fff;-webkit-box-shadow:inset 0 0 0 1000px #fff}
+
+/**
+* 1. Correct font family not being inherited in all browsers.
+* 2. Correct font size not being inherited in all browsers.
+* 3. Address margins set differently in Firefox 4+,Safari 5,and Chrome.
+*
+* 1. 修正所有浏览器中未被继承的字体类型。
+* 2. 修正所有浏览器中未被继承的字体大小。
+* 3. 处理 Firefox 4+,Safari 5,及 Chrome 中默认设置不同的外边距。
+*/
+@media only screen and (max-width:768px){
+    select,
+    textarea,
+    input[type="text"],
+    input[type="search"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="color"]{-min-width:1.5rem;-height:2.5rem;-line-height:2.5rem;-padding:.1rem .3rem}
+}
+
+button, input, optgroup, select, textarea{
+    margin:0;
+
+    font-family:inherit;
+    font-size:inherit;
+    color:inherit;
+    line-height:inherit;
+
+    vertical-align:middle;
+
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -moz-font-feature-settings:"liga", "kern";
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+
+    box-shadow:none;
+
+    outline:none;
+    resize:none;
+
+    -ms-user-select:auto;
+    -webkit-user-select:auto;
+    -moz-user-select:auto;
+    user-select:auto;
+
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color:transparent;
+    -webkit-box-shadow:none;
+}
+input:focus, textarea:focus, select:focus{outline-offset:-2px; -webkit-user-modify:read-write-plaintext-only;-webkit-tap-highlight-color:transparent}
+
+.input_primary:focus{border-color:#FF6633 !important}
+.input_enter_placeholder{color:#999}
+input:disabled{background:#fff}
+input.black:disabled{-webkit-text-fill-color:#333}
+
+/* Forms   ========================================================================== */
+
+/**
+* Vertical alignment
+* Exclude `radio` and `checkbox` elements because the default `baseline` value aligns better with text
+*/
+input:not([type="radio"]):not([type="checkbox"]){vertical-align:middle}
+
+.ios input:not([type="radio"]):not([type="checkbox"]),
+.retina input:not([type="radio"]):not([type="checkbox"]),
+.android input:not([type="radio"]):not([type="checkbox"]),
+[class*="ios"] input:not([type="radio"]):not([type="checkbox"]),
+[class*="android"] input:not([type="radio"]):not([type="checkbox"]),
+.ios select,
+.retina select,
+.android select,
+[class*="ios"] select,
+[class*="android"] select{min-height:40px !important;}
+
+
+/**==================== 输入框(input) ====================**/
+input, .input, .mk-input{
+    display:inline-block;
+    -width:100%;
+    height:34px;
+    line-height:1.42857 !important;
+
+    -padding:6px 12px !important;
+
+    font-size:14px !important;
+    color:#000;
+    background: transparent none;
+    vertical-align:middle;
+    outline:none;
+
+    border:1px solid #cfcfcf;
+    border-radius:.3rem;
+    text-transform:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -webkit-transition:all .3s;
+    -webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out;
+    -moz-transition:all .3s;
+    -ms-transition:all .3s;
+    -o-transition:all .3s;
+    -webkit-user-select:text !important;
+}
+
+input:not([type="button"]):not([type="radio"]):not([type="checkbox"]),
+.input:not([type="button"]):not([type="radio"]):not([type="checkbox"]),
+.mk-input:not([type="button"]):not([type="radio"]):not([type="checkbox"]){text-indent:.5rem;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{-webkit-appearance:none;}
+
+/**
+-webkit-user-select:text;
+-webkit-appearance:none;
+-webkit-transition:width 0.4s ease-in-out;
+transition:width 0.4s ease-in-out;
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+-webkit-transition:border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+-o-transition:border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+transition:border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+-background:url(mark.form.css) no-repeat scroll right center transparent;
+**/
+
+/** 默认。定义一个单行的文本字段（默认宽度为 20 个字符）。*/
+input[type="text"]{}
+input[type="text"]:focus{border:#70c3ec 1px solid;box-shadow:0 0 5px #eee}
+
+/** 定义密码字段（字段中的字符会被遮蔽）。*/
+input[type="password"]{}
+
+/** 定义用于输入电话号码的字段。*/
+input[type="tel"],
+[name="tel"],
+[name="call"],
+[name="phone"],
+[name="mobile"]{letter-spacing:.25rem}
+
+input[name="idcard"]{-width:calc(100% - 6rem);min-height:3rem;letter-spacing:.2rem}
+input[name="vehicleNum"]{-width:calc(100% - 6rem);min-height:3rem;letter-spacing:.4rem}
+
+
+/** 定义用于 e-mail 地址的字段。*/
+input[type="email"]{}
+
+/** 定义用于输入数字的字段。*/
+
+/**
+* Fix the cursor style for Chrome"s increment/decrement buttons. For certain
+* `font-size` values of the `input`,it causes the cursor style of the
+* decrement button to change from `default` to `text`.
+*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{height:auto;margin:0;-webkit-appearance:none;appearance:none}
+
+input[type="number"]{-moz-appearance:textfield !important;padding:0 5px !important;}
+
+/**
+* 1. Address box sizing set to `content-box` in IE 8/9.
+* 2. Remove excess padding in IE 8/9.
+*
+* 1. 处理 IE 8/9 中设置为 "content-box" 的盒子模型。
+* 2. 删除 IE 8/9 中多余的内边距。
+*/
+.radio, input[type="radio"],
+.checkbox, input[type="checkbox"]{width:20px;height:20px;min-width:1rem;min-height:1rem;line-height:normal;margin-top:1px;padding:0 !important;position:relative;vertical-align:middle;background:#fff;border:1px solid #ccc;border-radius:3px;box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-appearance:none;cursor:pointer}
+
+.radio:focus, input[type="radio"]:focus,
+.checkbox:focus, input[type="checkbox"]:focus{outline:1px auto -webkit-focus-ring-color;outline-offset:-2px}
+
+.radio:checked, input[type="radio"]:checked,
+.checkbox:checked, input[type="checkbox"]:checked{background:#3190e8}
+
+input[type="radio"]:checked::after,
+input[type="checkbox"]:checked::after{width:10px;height:6px;content:'';top:3px;left:3px;position:absolute;background:transparent;border:#fff solid 2px;border-top:none;border-right:none;-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.radio[disabled],
+.radio-inline[disabled],
+.checkbox[disabled],
+.checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .radio,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox,
+fieldset[disabled] .checkbox-inline{cursor:not-allowed}
+
+/*设置选中的input的样式*/
+
+/* + 是兄弟选择器,获取选中后的label元素*/
+
+/*
+input:checked+label{background-color:#fe6d32;border:1px solid #fe6d32}
+input:checked+label::after{position:absolute;content:"";width:5px;height:10px;top:3px;left:6px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg)}
+input[type="radio"]:after{border-radius:50%}
+input[type="checkbox"]:after{border-radius:5%}
+input[type="radio"]:after,
+input[type="checkbox"]:after{min-width:1rem;min-height:1rem;content:"";display:block;text-align:center;color:#fff;border:2px solid #ddd;vertical-align:middle}
+input[type="radio"]:checked:after,
+input[type="checkbox"]:checked:after{content:"\2714";border:#099414;background:#099414}
+*/
+.weui-agree__checkbox{top:-2px !important}
+
+/** 定义拾色器。*/
+input[type="color"]{width:100% !important;height:100% !important;padding:0 !important;}
+
+/** 定义隐藏输入字段。*/
+input[type="hidden"]{display:none !important; visibility:hidden !important;}
+
+/** 定义图像作为提交按钮。*/
+input[type="image"]{}
+
+/** 定义 month 和 year 控件（不带时区）。*/
+input[type="month"]{}
+
+/** 定义用于精确值不重要的输入数字的控件（比如 slider 控件）。*/
+input[type="range"]{}
+
+/** 定义重置按钮（重置所有的表单值为默认值）。*/
+input[type="reset"]{}
+
+/** 定义用于输入搜索字符串的文本字段。*/
+input[type="search"]{}
+
+/** 定义提交按钮。*/
+input[type="submit"]{}
+
+/** 定义用于输入 URL 的字段。*/
+input[type="url"]{}
+
+
+/**
+* 1. Avoid the WebKit bug in Android 4.0.* where(2) destroys native `audio` and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+* `input` and others.
+*
+* 1. 避免 Android 4.0.* 中 WebKit 的一个bug,防止 "audio" 与 "video" 的播放控件失效。
+* 2. 修正 iOS 中不可点击的 "input" 样式。
+* 3. 改善图片类型的 "input" 等光标样式的可用性与一致性。
+*/
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner{padding:0;border-style:none}
+
+[type="date"], [type="datetime-local"], [type="month"], [type="time"]{-webkit-appearance:listbox}
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+*(include `-moz` to future-proof).
+*
+* 1. 处理 Safari 5 和 Chrome 中默认设置为 "appearance" 的 "searchfield".
+* 2. 处理 Safari 5 和 Chrome 中默认设置为 "box-sizing" 的 "border-box"
+*(包括不会过时的 "-moz").
+*/
+input[type="search"]{height:34px;font-size:16px;text-align:center;background-color:rgba(247, 247, 247, 1);border:1px solid #e4e0e0;border-radius:.3rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:textfield;outline-offset:-2px}
+input[type="search"]:focus{text-align:left}
+/**
+* Remove inner padding and search cancel button in Safari 5 and Chrome on OS X.
+*
+* 删除 Safari 5 和 OS X 上的 Chrome 中的输入框上的内边距和搜索取消按钮。
+*/
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+
+
+/**
+* Remove inner padding and border in Firefox 4+.
+*
+* 删除 Firefox 4+ button 与 input 上的内边距。
+*/
+button::-moz-focus-inner, input::-moz-focus-inner{border:0;padding:0}
+.sex{padding-left:1.6rem}
+
+.readonly{border:1px solid #C0C0C0;text-align:left;background-color:#D3D3D3;readonly:expression(this.readOnly=true)}
+.readwrite{border:1px solid #C0C0C0;text-align:left;background-color:#FFFFFF;readonly:expression(this.readOnly=false)}
+
+/** JS Demo
+readonly("<%=txt1.ClientID %>",true);
+function readonly(ctr,isReadOnly){	var octr=document.getElementById(ctr);
+	if(octr!=null){		if(isReadOnly){			octr.className="readonly";
+		}else{			octr.className="readwrite";
+		}
+	}
+}
+*/
+
+/**
+ * 禁止选中文本
+ * <div unselectable="on" onselectstart="return false;">
+**/
+.unselectable,
+.noselect{
+    -webkit-touch-callout:none; /* iOS Safari */
+    -webkit-user-select:none; /* Chrome/Safari/Opera */
+    -khtml-user-select:none; /* Konqueror */
+    -moz-user-select:none; /* Firefox */
+    -ms-user-select:none; /* Internet Explorer/Edge */
+    user-select:none; /* Non-prefixed version, currently not supported by any browser */
+}
+/**==================== 按钮样式（button） ====================**/
+
+/**
+* Re-set default cursor for disabled elements.
+*
+* 重置不可用元素的默认光标样式。
+*/
+button[disabled], input[disabled]{cursor:default}
+.radio_label{position:relative;margin:0 1rem}
+.edit-dialog .content-wrap .content-item .input{width:250px;margin-top:5px}
+
+.letter-1{letter-spacing:1px}
+.letter1, .spacing{letter-spacing:.1rem}
+.letter2, .spacing2{letter-spacing:.2rem}
+.letter3, .spacing3{letter-spacing:.3rem}
+.letter4, .spacing4{letter-spacing:.4rem}
+.letter5, .spacing5{letter-spacing:.5rem}
+
+/**==================== 上传文件（Upload Files） ====================**/
+.mk-form-file{position:relative;overflow:hidden}
+.mk-form-file input[type=file], input[type=file]{position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;opacity:0;cursor:pointer;font-size:50rem;display:block}
+label[type=file]{position:relative;width:100%;height:100%;display:block;cursor:pointer}
+.desc-wrapper{position:absolute;top:80%;left:10%}
+.desc-wrapper i{margin-right:10px;display:inline-block;width:26px;height:20px;background-size:26px 20px;background-image:url('../../images/icon/icon_camera.png')}
+.desc-wrapper span{font-size:13px;margin-top:-7.5px;color:#f63;font-weight:500;vertical-align:super}
+
+/*checkbox样式*/
+.select-tag-input + label{background:#eaeaea;-border:1px solid #C1CACA;border:none;box-shadow:0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);padding:9px;border-radius:5px;display:inline-block;position:relative;margin-right:18px;margin-top:9px}
+.select-tag-input + label:active{box-shadow:0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1)}
+.select-tag-input:checked + label{background:#eaeaea;color:#243441;-border:1px solid #92A1AC;border:none;box-shadow:0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1)}
+.select-tag-input:checked + label:after{content:"\2714";position:absolute;top:-11px;left:0;color:#758794;width:100%;text-align:center;font-size:1.4em;padding:1px 0 0 0;vertical-align:text-top}
+
+/*---------- 日期 ----------*/
+
+/* input placeholder Input 提示样式*/
+::-webkit-input-placeholder, input::-webkit-input-placeholder{line-height:1em;font-size:1em;color:inherit;background:transparent;opacity:.54;display:inline-block;vertical-align:middle}
+
+/* webkit-appearance:none;wx 边框右侧向上箭头 */
+
+/** 定义 date 控件（包括年、月、日，不包括时间）。*/
+input[type="date"]{width:100%;min-width:1.5rem;height:2.5rem;min-height:2.5rem;line-height:2.5rem;vertical-align:middle;background:transparent;display:inline-block;position:relative;font-size:14px;letter-spacing:.07rem;border:1px solid #cfcfcf;border-radius:.3rem;outline:none;-webkit-user-select:text;-webkit-appearance:none;text-transform:none}
+input[type="date"]:before{position:absolute;color:#A9A9A9;-content:attr(placeholder);background:transparent}
+input[type="date"].full:before{color:black;content:"" !important;background:transparent}
+
+/*---------- 用来移除向下箭头,消除后可能无法唤起选择器 ----------*/
+input[type="date"]::-webkit-calendar-picker-indicator{-display:none}
+
+/*----------用来移除叉叉按钮----------*/
+input[type="date"]::-webkit-clear-button{display:none}
+input[type="time"]{}
+
+/** 定义用于输入时间的控件（不带时区）。*/
+input[type="week"]{}
+
+/** 定义 week 和 year 控件（不带时区）。*/
+input[type="datetime"]{}
+
+/** 定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，基于 UTC 时区）。*/
+input[type="datetime-local"]{}
+
+/** 定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。*/
+
+/* 修改日历控件类型 */
+::-webkit-datetime-edit{padding:1px}
+
+/*控制编辑区域的*/
+::-webkit-datetime-edit-fields-wrapper{background:transparent}
+
+/*控制年月日这个区域的*/
+::-webkit-datetime-edit-text{color:#333;padding:0 .5em}
+
+/*这是控制年月日之间的斜线或短横线的*/
+::-webkit-datetime-edit-year-field{color:#333}
+
+/*控制年文字,如2013四个字母占据的那片地方*/
+::-webkit-datetime-edit-month-field{color:#333}
+
+/*控制月份*/
+::-webkit-datetime-edit-day-field{color:#333}
+::-webkit-date-and-time-value{color:#333}
+
+/*控制具体日子*/
+::-webkit-inner-spin-button{visibility:hidden}
+
+/*这是控制上下小箭头的*/
+
+/*这是控制下拉小箭头的*/
+::-webkit-calendar-picker-indicator{color:#666;border:1px solid #ccc;border-radius:2px;box-shadow:inset 0 1px #fff, 0 1px #eee;background-color:#eee;background-image:-webkit-linear-gradient(top, #f0f0f0, #e6e6e6)}
+::-webkit-clear-button{
+    /*控制清除按钮*/}
+
+/*
+::-webkit-datetime-edit – 控制编辑区域的
+::-webkit-datetime-edit-fields-wrapper – 控制年月日这个区域的
+::-webkit-datetime-edit-text – 这是控制年月日之间的斜线或短横线的
+::-webkit-datetime-edit-month-field – 控制月份
+::-webkit-datetime-edit-day-field – 控制具体日子
+::-webkit-datetime-edit-year-field – 控制年文字,如2017四个字母占据的那片地方
+::-webkit-inner-spin-button – 这是控制上下小箭头的
+::-webkit-calendar-picker-indicator – 这是控制下拉小箭头的
+::-webkit-clear-button –这是控制清除按钮的
+以下的囊括了date，datetime，week，time所用的伪元素:
+*/
+input::-webkit-datetime-edit{}
+input::-webkit-datetime-edit-fields-wrapper{}
+input::-webkit-datetime-edit-ampm-field{}
+input::-webkit-datetime-edit-day-field{}
+input::-webkit-datetime-edit-hour-field{}
+input::-webkit-datetime-edit-millisecond-field{}
+input::-webkit-datetime-edit-minute-field{}
+input::-webkit-datetime-edit-month-field{}
+input::-webkit-datetime-edit-second-field{}
+input::-webkit-datetime-edit-week-field{}
+input::-webkit-datetime-edit-year-field{}
+input::-webkit-datetime-edit-ampm-field:focus{}
+input::-webkit-datetime-edit-day-field:focus{}
+input::-webkit-datetime-edit-hour-field:focus{}
+input::-webkit-datetime-edit-millisecond-field:focus{}
+input::-webkit-datetime-edit-minute-field:focus{}
+input::-webkit-datetime-edit-month-field:focus{}
+input::-webkit-datetime-edit-second-field:focus{}
+input::-webkit-datetime-edit-week-field:focus{}
+input::-webkit-datetime-edit-year-field:focus{}
+input::-webkit-datetime-edit-year-field[disabled]{}
+input::-webkit-datetime-edit-month-field[disabled]{}
+input::-webkit-datetime-edit-week-field[disabled]{}
+input::-webkit-datetime-edit-day-field[disabled]{}
+input::-webkit-datetime-edit-ampm-field[disabled]{}
+input::-webkit-datetime-edit-hour-field[disabled]{}
+input::-webkit-datetime-edit-millisecond-field[disabled]{}
+input::-webkit-datetime-edit-minute-field[disabled]{}
+input::-webkit-datetime-edit-second-field[disabled]{}
+input::-webkit-datetime-edit-text{}
+input::-webkit-inner-spin-button{}
+input::-webkit-calendar-picker-indicator{}
+input::-webkit-calendar-picker-indicator:hover{}
+
+/*
+date类型改变行高和高度那个小三角并不会根据大小调整，实在太丑了，所以决定把它隐藏掉。
+下面的css可以去掉date中上下小三角，但是保留input类型为number的小三角。
+input[type=date]::-webkit-inner-spin-button{visibility:hidden}
+input类型为date的输入框有以下属性，可以根据自己的需求自行调整。
+*/
+input[type=date]::-webkit-datetime-edit{padding:1px;background:#fff}
+input[type=date]::-webkit-datetime-edit-fields-wrapper{background-color:#eee}
+input[type=date]::-webkit-datetime-edit-text{color:#4D90FE;padding:0 .3em}
+input[type=date]::-webkit-datetime-edit-year-field{color:purple}
+input[type=date]::-webkit-datetime-edit-month-field{color:blue}
+input[type=date]::-webkit-datetime-edit-day-field{color:green}
+input[type=date]::-webkit-inner-spin-button{visibility:hidden}
+input[type=date]::-webkit-calendar-picker-indicator{border:1px solid #ccc;border-radius:2px;box-shadow:inset 0 1px #fff, 0 1px #eee;background-color:#eee;background-image:-webkit-linear-gradient(top, #f0f0f0, #e6e6e6);color:#666}
+input[data-type="datatime"]{min-width:8rem;min-height:1.2rem;-line-height:2.5rem;margin-top:1px;padding:2px 0;text-align:center;-text-align-last:center;vertical-align:middle;font-size:14px;text-transform:none;background:#fff;border:1px #cfcfcf solid;border-radius:.3rem}
+
+/**  增加按钮，清除Input内容 **/
+input[data-clear='after']:after, input[data-clear='after']::before{
+    color:#adadad;
+    font-size:22px;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    -position:absolute;
+    width:1rem;
+    height:1rem;
+    -height:calc(100% - 20px);
+    background:rebeccapurple;
+    -bottom:0;
+    -left:0;
+    padding-left:13px;
+    padding-top:3px;
+    content:'X';
+}
+
+/**==================== 文本框（textarea） ====================**/
+/**
+* 1. Remove default vertical scrollbar in IE 8/9.
+* 2. Improve readability and alignment in all browsers.
+*
+* 1. 删除 IE8/9 中默认的垂直滚动条。
+* 2. 改善所有浏览器中的可读性并使文本垂直对齐。
+*/
+textarea, .textarea, .mk-textarea{
+    width:-webkit-fill-available;
+    max-width:100%;
+    height:auto;
+    min-height:70px;
+    color:#333;
+    font-size:14px;
+    border-radius:.3rem;
+    -webkit-border-radius:.3rem;
+    -moz-border-radius:.3rem;
+    -ms-border-radius:.3rem;
+    -o-border-radius:.3rem;
+    border:1px #cfcfcf solid !important;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    background-color:#fff;
+    padding:6px 9px;
+    outline:none;
+    outline:0;
+    resize:none;
+    vertical-align:top;
+    overflow:auto;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box}
+textarea:hover, .textarea:hover, .mk-textarea:hover{border-color:#ccc}
+
+textarea:focus, .textarea:focus, .mk-textarea:focus{
+    background-color:#fefffe !important;
+    border-color:#3bb4f2 !important;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, 0.3) !important;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, 0.3) !important;
+}
+textarea:disabled, .textarea:disabled, .mk-textarea:disabled{opacity:.7}
+.textarea-total{position:absolute;right:20px;bottom:20px;color:#999}
+
+/**==================== 下拉菜单（select） ====================**/
+.mk-form input[type=number],
+.mk-form input[type=search],
+.mk-form input[type=text],
+.mk-form input[type=password],
+.mk-form input[type=datetime],
+.mk-form input[type=datetime-local],
+.mk-form input[type=date],
+.mk-form input[type=month],
+.mk-form input[type=time],
+.mk-form input[type=week],
+.mk-form input[type=email],
+.mk-form input[type=url],
+.mk-form input[type=tel],
+.mk-form input[type=color],
+.mk-form select,
+.mk-form-field,
+select, .select, .mk-select{
+    display:-webkit-inline-box !important;
+    -width:100%;
+    height:40px;
+    line-height:1.42857 !important;
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    border:1px solid #ccc;
+
+    font-size:14px !important;
+    background-color:#fff;
+    background-image:none;
+    vertical-align:middle;
+    text-transform:none;
+    outline:none;}
+
+select, .select, .mk-select{
+    text-align:center;
+    text-align-last:center;
+
+    padding:6px 20px 6px 12px !important;
+    /*清除默认样式*/
+    /*在选择框的最右侧中间显示小箭头图片*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -webkit-border-radius:0;
+    vertical-align:middle;
+    background:#fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) no-repeat 100% center !important;}
+
+@media (max-width:640px){
+    select, .select, .mk-select{width:100% !important;}
+}
+select + select{margin:0.5rem;}
+
+.mk-select[multiple="multiple"]{background-image:none}
+
+.mk-textarea,
+.mk-select[multiple],
+.mk-select[size]{height:auto}
+
+.mk-select optgroup{font-size:inherit;font-style:inherit;font-family:inherit}
+
+.transition{ -webkit-transition:border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;}
+
+.mk-select-border, .mk-select.border{
+    -webkit-user-select:text;
+    -webkit-appearance:none;
+    transition:width 0.4s ease-in-out;
+    -webkit-transition:width 0.4s ease-in-out;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition:border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition:border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition:border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border:1px solid #eee;
+    border-radius:.3rem;}
+
+select option.rtl{direction:rtl;}
+select, select option{direction:inherit;text-align:center;text-align-last:center;}
+.mk-select option{
+    width:auto;
+    min-height:2rem;
+    line-height:1rem;
+    margin:0;
+    padding:5px 10px;
+    font-size:14px;
+    color:#555;
+    text-align:center;
+    text-align-last:center;
+    vertical-align:middle;
+    text-indent:1rem;
+    border:1px #cfcfcf solid;
+
+    position:relative;
+    cursor:pointer;
+
+    -webkit-transition:background-color 0.15s;
+    transition:background-color 0.15s;}
+
+.mk-select option:hover{background-color:#f8f8f8;}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand{display:none}
+.last-right, .text-align-last-right{text-align:right;text-align-last:right}
+
+/**
+ * 多级联动选择器
+ */
+.multipicker, [data-toggle="multipicker"]{}
+.multipicker select, [data-toggle="multipicker"] select{min-width:4rem;margin-right:.5rem}
+@media screen and (min-width:640px){
+    .multipicker select, [data-toggle="multipicker"] select{width:auto !important}
+}
+
+/** Amazeui **/
+input[type=button].mk-btn-block,
+input[type=reset].mk-btn-block,
+input[type=submit].mk-btn-block{width:100%}
+.mk-btn.mk-btn-loading .mk-icon-spin{margin-right:5px}
+input[type=search]{-webkit-box-sizing:border-box;box-sizing:border-box}
+select[multiple], select[size]{height:auto}
+select optgroup{font-size:inherit;font-style:inherit;font-family:inherit}
+input[type=checkbox]:focus,
+input[type=file]:focus,
+input[type=radio]:focus{outline:1px auto -webkit-focus-ring-color;outline-offset:-2px}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{height:auto}
+.mk-form input[type=number]:focus,
+.mk-form input[type=search]:focus,
+.mk-form input[type=text]:focus,
+.mk-form input[type=password]:focus,
+.mk-form input[type=datetime]:focus,
+.mk-form input[type=datetime-local]:focus,
+.mk-form input[type=date]:focus,
+.mk-form input[type=month]:focus,
+.mk-form input[type=time]:focus,
+.mk-form input[type=week]:focus,
+.mk-form input[type=email]:focus,
+.mk-form input[type=url]:focus,
+.mk-form input[type=tel]:focus,
+.mk-form input[type=color]:focus,
+.mk-form select:focus,
+.mk-form textarea:focus,
+.mk-form-field:focus{outline:0}
+.mk-form input[type=number]:focus,
+.mk-form input[type=search]:focus,
+.mk-form input[type=text]:focus,
+.mk-form input[type=password]:focus,
+.mk-form input[type=datetime]:focus,
+.mk-form input[type=datetime-local]:focus,
+.mk-form input[type=date]:focus,
+.mk-form input[type=month]:focus,
+.mk-form input[type=time]:focus,
+.mk-form input[type=week]:focus,
+.mk-form input[type=email]:focus,
+.mk-form input[type=url]:focus,
+.mk-form input[type=tel]:focus,
+.mk-form input[type=color]:focus,
+.mk-form textarea:focus,
+.mk-form-field:focus{border-color:#f17741;outline:0}
+.deprecated{-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, .3);box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, .3)}
+
+.mk-form input[type=number]::-webkit-input-placeholder,
+.mk-form input[type=search]::-webkit-input-placeholder,
+.mk-form input[type=text]::-webkit-input-placeholder,
+.mk-form input[type=password]::-webkit-input-placeholder,
+.mk-form input[type=datetime]::-webkit-input-placeholder,
+.mk-form input[type=datetime-local]::-webkit-input-placeholder,
+.mk-form input[type=date]::-webkit-input-placeholder,
+.mk-form input[type=month]::-webkit-input-placeholder,
+.mk-form input[type=time]::-webkit-input-placeholder,
+.mk-form input[type=week]::-webkit-input-placeholder,
+.mk-form input[type=email]::-webkit-input-placeholder,
+.mk-form input[type=url]::-webkit-input-placeholder,
+.mk-form input[type=tel]::-webkit-input-placeholder,
+.mk-form input[type=color]::-webkit-input-placeholder,
+.mk-form select::-webkit-input-placeholder,
+.mk-form textarea::-webkit-input-placeholder,
+.mk-form-field::-webkit-input-placeholder{color:#999}
+
+.mk-form input[type=number]::-moz-placeholder,
+.mk-form input[type=search]::-moz-placeholder,
+.mk-form input[type=text]::-moz-placeholder,
+.mk-form input[type=password]::-moz-placeholder,
+.mk-form input[type=datetime]::-moz-placeholder,
+.mk-form input[type=datetime-local]::-moz-placeholder,
+.mk-form input[type=date]::-moz-placeholder,
+.mk-form input[type=month]::-moz-placeholder,
+.mk-form input[type=time]::-moz-placeholder,
+.mk-form input[type=week]::-moz-placeholder,
+.mk-form input[type=email]::-moz-placeholder,
+.mk-form input[type=url]::-moz-placeholder,
+.mk-form input[type=tel]::-moz-placeholder,
+.mk-form input[type=color]::-moz-placeholder,
+.mk-form select::-moz-placeholder,
+.mk-form textarea::-moz-placeholder,
+.mk-form-field::-moz-placeholder{color:#999}
+
+.mk-form input[type=number]:-ms-input-placeholder,
+.mk-form input[type=search]:-ms-input-placeholder,
+.mk-form input[type=text]:-ms-input-placeholder,
+.mk-form input[type=password]:-ms-input-placeholder,
+.mk-form input[type=datetime]:-ms-input-placeholder,
+.mk-form input[type=datetime-local]:-ms-input-placeholder,
+.mk-form input[type=date]:-ms-input-placeholder,
+.mk-form input[type=month]:-ms-input-placeholder,
+.mk-form input[type=time]:-ms-input-placeholder,
+.mk-form input[type=week]:-ms-input-placeholder,
+.mk-form input[type=email]:-ms-input-placeholder,
+.mk-form input[type=url]:-ms-input-placeholder,
+.mk-form input[type=tel]:-ms-input-placeholder,
+.mk-form input[type=color]:-ms-input-placeholder,
+.mk-form select:-ms-input-placeholder,
+.mk-form textarea:-ms-input-placeholder,
+.mk-form-field:-ms-input-placeholder{color:#999}
+.mk-form input[type=number]::placeholder,
+.mk-form input[type=search]::placeholder,
+.mk-form input[type=text]::placeholder,
+.mk-form input[type=password]::placeholder,
+.mk-form input[type=datetime]::placeholder,
+.mk-form input[type=datetime-local]::placeholder,
+.mk-form input[type=date]::placeholder,
+.mk-form input[type=month]::placeholder,
+.mk-form input[type=time]::placeholder,
+.mk-form input[type=week]::placeholder,
+.mk-form input[type=email]::placeholder,
+.mk-form input[type=url]::placeholder,
+.mk-form input[type=tel]::placeholder,
+.mk-form input[type=color]::placeholder,
+.mk-form select::placeholder,
+.mk-form textarea::placeholder,
+.mk-form-field::placeholder{color:#999}
+
+.mk-form input[type=number]::-moz-placeholder,
+.mk-form input[type=search]::-moz-placeholder,
+.mk-form input[type=text]::-moz-placeholder,
+.mk-form input[type=password]::-moz-placeholder,
+.mk-form input[type=datetime]::-moz-placeholder,
+.mk-form input[type=datetime-local]::-moz-placeholder,
+.mk-form input[type=date]::-moz-placeholder,
+.mk-form input[type=month]::-moz-placeholder,
+.mk-form input[type=time]::-moz-placeholder,
+.mk-form input[type=week]::-moz-placeholder,
+.mk-form input[type=email]::-moz-placeholder,
+.mk-form input[type=url]::-moz-placeholder,
+.mk-form input[type=tel]::-moz-placeholder,
+.mk-form input[type=color]::-moz-placeholder,
+.mk-form select::-moz-placeholder,
+.mk-form textarea::-moz-placeholder,
+.mk-form-field::-moz-placeholder{opacity:1}
+.mk-form input[type=number][disabled],
+.mk-form input[type=number][readonly],
+.mk-form input[type=search][disabled],
+.mk-form input[type=search][readonly],
+.mk-form input[type=text][disabled],
+.mk-form input[type=text][readonly],
+.mk-form input[type=password][disabled],
+.mk-form input[type=password][readonly],
+.mk-form input[type=datetime][disabled],
+.mk-form input[type=datetime][readonly],
+.mk-form input[type=datetime-local][disabled],
+.mk-form input[type=datetime-local][readonly],
+.mk-form input[type=date][disabled],
+.mk-form input[type=date][readonly],
+.mk-form input[type=month][disabled],
+.mk-form input[type=month][readonly],
+.mk-form input[type=time][disabled],
+.mk-form input[type=time][readonly],
+.mk-form input[type=week][disabled],
+.mk-form input[type=week][readonly],
+.mk-form input[type=email][disabled],
+.mk-form input[type=email][readonly],
+.mk-form input[type=url][disabled],
+.mk-form input[type=url][readonly],
+.mk-form input[type=tel][disabled],
+.mk-form input[type=tel][readonly],
+.mk-form input[type=color][disabled],
+.mk-form input[type=color][readonly],
+.mk-form select[disabled],
+.mk-form select[readonly],
+.mk-form textarea[disabled],
+.mk-form textarea[readonly],
+.mk-form-field[disabled],
+.mk-form-field[readonly]{cursor:not-allowed;background-color:#eee}
+.mk-form input[type=number].mk-radius,
+.mk-form input[type=search].mk-radius,
+.mk-form input[type=text].mk-radius,
+.mk-form input[type=password].mk-radius,
+.mk-form input[type=datetime].mk-radius,
+.mk-form input[type=datetime-local].mk-radius,
+.mk-form input[type=date].mk-radius,
+.mk-form input[type=month].mk-radius,
+.mk-form input[type=time].mk-radius,
+.mk-form input[type=week].mk-radius,
+.mk-form input[type=email].mk-radius,
+.mk-form input[type=url].mk-radius,
+.mk-form input[type=tel].mk-radius,
+.mk-form input[type=color].mk-radius,
+.mk-form select.mk-radius,
+.mk-form textarea.mk-radius,
+.mk-form-field.mk-radius{border-radius:2px}
+.mk-form input[type=number].mk-round,
+.mk-form input[type=search].mk-round,
+.mk-form input[type=text].mk-round,
+.mk-form input[type=password].mk-round,
+.mk-form input[type=datetime].mk-round,
+.mk-form input[type=datetime-local].mk-round,
+.mk-form input[type=date].mk-round,
+.mk-form input[type=month].mk-round,
+.mk-form input[type=time].mk-round,
+.mk-form input[type=week].mk-round,
+.mk-form input[type=email].mk-round,
+.mk-form input[type=url].mk-round,
+.mk-form input[type=tel].mk-round,
+.mk-form input[type=color].mk-round,
+.mk-form select.mk-round,
+.mk-form textarea.mk-round,
+.mk-form-field.mk-round{border-radius:1000px}
+.mk-form select[multiple],
+.mk-form select[size],
+.mk-form select[multiple=multiple]{background-image:none}
+.mk-form input[type=datetime-local].mk-input-sm,
+.mk-form input[type=date].mk-input-sm,
+input[type=datetime-local].mk-form-field.mk-input-sm,
+input[type=date].mk-form-field.mk-input-sm{height:32px}
+.mk-form input[type=datetime-local] .mk-input-lg,
+.mk-form input[type=date] .mk-input-lg,
+input[type=datetime-local].mk-form-field .mk-input-lg,
+input[type=date].mk-form-field .mk-input-lg{height:41px}
+.mk-form-help{display:block;margin-top:5px;margin-bottom:10px;color:#999;font-size:1.3rem}
+.mk-input-group, .am-input-group{margin-bottom:1.5rem}
+.mk-form-group, .am-form-group{margin-bottom:1.5rem}
+.mk-form-group:after, .mk-form-group:before{content:" ";display:table;}
+.mk-checkbox,
+.mk-radio{display:block;min-height:1.92rem;margin-top:10px;margin-bottom:10px;padding-left:20px;vertical-align:middle}
+.mk-checkbox label,
+.mk-radio label{display:inline;margin-bottom:0;font-weight:400;cursor:pointer}
+.mk-checkbox input[type=checkbox],
+.mk-checkbox-inline input[type=checkbox],
+.mk-radio input[type=radio],
+.mk-radio-inline input[type=radio]{float:left;margin-left:-20px;outline:0}
+.mk-checkbox + .mk-checkbox,
+.mk-radio + .mk-radio{margin-top:-5px}
+.mk-checkbox-inline,
+.mk-radio-inline{display:inline-block;padding-left:20px;margin-bottom:0;vertical-align:middle;font-weight:400;cursor:pointer}
+.mk-checkbox-inline + .mk-checkbox-inline,
+.mk-radio-inline + .mk-radio-inline{margin-top:0;margin-left:10px}
+.mk-form-warning .mk-checkbox,
+.mk-form-warning .mk-checkbox-inline,
+.mk-form-warning .mk-form-help,
+.mk-form-warning .mk-form-label,
+.mk-form-warning .mk-radio,
+.mk-form-warning .mk-radio-inline,
+.mk-form-warning label{color:#F37B1D}
+.mk-form-warning [class*=icon-]{color:#F37B1D}
+.mk-form-warning .mk-form-field{border-color:#F37B1D !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075)}
+.mk-form-warning .mk-form-field:focus{background-color:#fefffe;border-color:#d2620b;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #f8b47e !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #f8b47e !important}
+.mk-form-error .mk-checkbox,
+.mk-form-error .mk-checkbox-inline,
+.mk-form-error .mk-form-help,
+.mk-form-error .mk-form-label,
+.mk-form-error .mk-radio,
+.mk-form-error .mk-radio-inline,
+.mk-form-error label{color:#dd514c}
+.mk-form-error [class*=icon-]{color:#dd514c}
+.mk-field-error,
+.mk-form-error .mk-form-field{border-color:#dd514c !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075)}
+.mk-field-error:focus,
+.mk-form-error .mk-form-field:focus{background-color:#fefffe;border-color:#cf2d27;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #eda4a2 !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #eda4a2 !important}
+.mk-form-success .mk-checkbox,
+.mk-form-success .mk-checkbox-inline,
+.mk-form-success .mk-form-help,
+.mk-form-success .mk-form-label,
+.mk-form-success .mk-radio,
+.mk-form-success .mk-radio-inline,
+.mk-form-success label{color:#5eb95e}
+.mk-form-success [class*=icon-]{color:#5eb95e}
+.mk-field-valid,
+.mk-form-success .mk-form-field{border-color:#5eb95e !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075)}
+.mk-field-valid:focus,
+.mk-form-success .mk-form-field:focus{background-color:#fefffe;border-color:#459f45;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #a5d8a5 !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px #a5d8a5 !important}
+.am-form-horizontal .am-checkbox,
+.am-form-horizontal .am-checkbox-inline,
+.am-form-horizontal .am-form-label,
+.am-form-horizontal .am-radio,
+.am-form-horizontal .am-radio-inline{margin-top:0;margin-bottom:0;padding-top:.6em}
+.am-form-horizontal .am-form-group:after,
+.am-form-horizontal .am-form-group:before{content:" ";display:table}
+.am-form-horizontal .am-form-group:after{clear:both}
+@media only screen and (min-width:641px){
+    .am-form-horizontal .am-form-label{text-align:right}
+    .am-form-inline .am-form-group{display:inline-block;margin-bottom:0;vertical-align:middle}
+    .am-form-inline .am-form-field{display:inline-block;width:auto;vertical-align:middle}
+    .am-form-inline .am-input-group{display:inline-table;vertical-align:middle}
+    .am-form-inline .am-input-group .am-form-label,
+    .am-form-inline .am-input-group .am-input-group-btn,
+    .am-form-inline .am-input-group .am-input-group-label{width:auto}
+    .am-form-inline .am-input-group > .am-form-field{width:100%}
+    .am-form-inline .am-form-label{margin-bottom:0;vertical-align:middle}
+    .am-form-inline .am-checkbox,
+    .am-form-inline .am-radio{display:inline-block;margin-top:0;margin-bottom:0;padding-left:0;vertical-align:middle}
+    .am-form-inline .am-checkbox input[type=checkbox],
+    .am-form-inline .am-radio input[type=radio]{float:none;margin-left:0}
+}
+.mk-input-sm{font-size:1.4rem !important}
+.mk-input-lg{font-size:1.8rem !important}
+.am-input-group-sm .mk-checkbox,
+.am-input-group-sm .mk-form-field,
+.am-input-group-sm .mk-form-label,
+.am-input-group-sm .mk-radio{font-size:1.4rem !important}
+.am-input-group-lg .mk-checkbox,
+.am-input-group-lg .mk-form-field,
+.am-input-group-lg .mk-form-label,
+.am-input-group-lg .mk-radio{font-size:1.8rem !important}
+.am-input-group-lg input[type=checkbox],
+.am-input-group-lg input[type=radio]{margin-top:7px}
+.mk-form-icon{position:relative}
+.mk-form-icon .mk-form-field{padding-left:1.75em !important}
+.mk-form-icon [class*=mk-icon-]{position:absolute;left:.5em;top:50%;display:block;margin-top:-.5em;line-height:1;z-index:2}
+.mk-form-icon label ~ [class*=mk-icon-]{top:70%}
+.mk-form-feedback{position:relative}
+.mk-form-feedback .mk-form-field{padding-left:.5em !important;padding-right:1.75em !important}
+.mk-form-feedback [class*=mk-icon-]{right:.5em;left:auto}
+.mk-form-horizontal .mk-form-feedback [class*=mk-icon-]{right:1.6em}
+.mk-form-set{margin-bottom:1.5rem;padding:0}
+.mk-form-set > input{position:relative;top:-1px;border-radius:0 !important}
+.mk-form-set > input:focus{z-index:2}
+.mk-form-set > input:first-child{top:1px;border-top-right-radius:0 !important;border-top-left-radius:0 !important}
+.mk-form-set > input:last-child{top:-2px;border-bottom-right-radius:0 !important;border-bottom-left-radius:0 !important}
+
+/* ==================== Component:Form ==================== */
+
+/* Normalize */
+fieldset{border:none}
+legend{display:block;width:100%;margin-bottom:2rem;font-size:2rem;line-height:inherit;color:#333333;border-bottom:1px solid #e5e5e5;padding-bottom:0.5rem}
+input[type="search"]{-webkit-box-sizing:border-box;box-sizing:border-box}
+
+input[type="file"]{display:block}
+
+output{display:block;padding-top:1.6rem;font-size:1.6rem;line-height:1.6;color:#555555;vertical-align:middle}
+
+/* Common form controls */
+.am-form select,
+.am-form textarea,
+.am-form input[type="text"],
+.am-form input[type="password"],
+.am-form input[type="datetime"],
+.am-form input[type="datetime-local"],
+.am-form input[type="date"],
+.am-form input[type="month"],
+.am-form input[type="time"],
+.am-form input[type="week"],
+.am-form input[type="number"],
+.am-form input[type="email"],
+.am-form input[type="url"],
+.am-form input[type="search"],
+.am-form input[type="tel"],
+.am-form input[type="color"],
+.am-form-field{width:100%;color:#555555;vertical-align:middle;background-color:#fff;border:1px solid #ccc;}
+
+.am-form select:focus,
+.am-form textarea:focus,
+.am-form input[type="text"]:focus,
+.am-form input[type="password"]:focus,
+.am-form input[type="datetime"]:focus,
+.am-form input[type="datetime-local"]:focus,
+.am-form input[type="date"]:focus,
+.am-form input[type="month"]:focus,
+.am-form input[type="time"]:focus,
+.am-form input[type="week"]:focus,
+.am-form input[type="number"]:focus,
+.am-form input[type="email"]:focus,
+.am-form input[type="url"]:focus,
+.am-form input[type="search"]:focus,
+.am-form input[type="tel"]:focus,
+.am-form input[type="color"]:focus,
+.am-form-field:focus{outline:0}
+.am-form select:focus,
+.am-form textarea:focus,
+.am-form input[type="text"]:focus,
+.am-form input[type="password"]:focus,
+.am-form input[type="datetime"]:focus,
+.am-form input[type="datetime-local"]:focus,
+.am-form input[type="date"]:focus,
+.am-form input[type="month"]:focus,
+.am-form input[type="time"]:focus,
+.am-form input[type="week"]:focus,
+.am-form input[type="number"]:focus,
+.am-form input[type="email"]:focus,
+.am-form input[type="url"]:focus,
+.am-form input[type="search"]:focus,
+.am-form input[type="tel"]:focus,
+.am-form input[type="color"]:focus,
+.am-form-field:focus{background-color:#fefffe;border-color:#3bb4f2;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, 0.3);box-shadow:inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 5px rgba(59, 180, 242, 0.3)}
+.am-form select::-webkit-input-placeholder,
+.am-form textarea::-webkit-input-placeholder,
+.am-form input[type="text"]::-webkit-input-placeholder,
+.am-form input[type="password"]::-webkit-input-placeholder,
+.am-form input[type="datetime"]::-webkit-input-placeholder,
+.am-form input[type="datetime-local"]::-webkit-input-placeholder,
+.am-form input[type="date"]::-webkit-input-placeholder,
+.am-form input[type="month"]::-webkit-input-placeholder,
+.am-form input[type="time"]::-webkit-input-placeholder,
+.am-form input[type="week"]::-webkit-input-placeholder,
+.am-form input[type="number"]::-webkit-input-placeholder,
+.am-form input[type="email"]::-webkit-input-placeholder,
+.am-form input[type="url"]::-webkit-input-placeholder,
+.am-form input[type="search"]::-webkit-input-placeholder,
+.am-form input[type="tel"]::-webkit-input-placeholder,
+.am-form input[type="color"]::-webkit-input-placeholder,
+.am-form-field::-webkit-input-placeholder{color:#999999}
+.am-form select::-moz-placeholder,
+.am-form textarea::-moz-placeholder,
+.am-form input[type="text"]::-moz-placeholder,
+.am-form input[type="password"]::-moz-placeholder,
+.am-form input[type="datetime"]::-moz-placeholder,
+.am-form input[type="datetime-local"]::-moz-placeholder,
+.am-form input[type="date"]::-moz-placeholder,
+.am-form input[type="month"]::-moz-placeholder,
+.am-form input[type="time"]::-moz-placeholder,
+.am-form input[type="week"]::-moz-placeholder,
+.am-form input[type="number"]::-moz-placeholder,
+.am-form input[type="email"]::-moz-placeholder,
+.am-form input[type="url"]::-moz-placeholder,
+.am-form input[type="search"]::-moz-placeholder,
+.am-form input[type="tel"]::-moz-placeholder,
+.am-form input[type="color"]::-moz-placeholder,
+.am-form-field::-moz-placeholder{color:#999999}
+.am-form select:-ms-input-placeholder,
+.am-form textarea:-ms-input-placeholder,
+.am-form input[type="text"]:-ms-input-placeholder,
+.am-form input[type="password"]:-ms-input-placeholder,
+.am-form input[type="datetime"]:-ms-input-placeholder,
+.am-form input[type="datetime-local"]:-ms-input-placeholder,
+.am-form input[type="date"]:-ms-input-placeholder,
+.am-form input[type="month"]:-ms-input-placeholder,
+.am-form input[type="time"]:-ms-input-placeholder,
+.am-form input[type="week"]:-ms-input-placeholder,
+.am-form input[type="number"]:-ms-input-placeholder,
+.am-form input[type="email"]:-ms-input-placeholder,
+.am-form input[type="url"]:-ms-input-placeholder,
+.am-form input[type="search"]:-ms-input-placeholder,
+.am-form input[type="tel"]:-ms-input-placeholder,
+.am-form input[type="color"]:-ms-input-placeholder,
+.am-form-field:-ms-input-placeholder{color:#999999}
+.am-form select::placeholder,
+.am-form textarea::placeholder,
+.am-form input[type="text"]::placeholder,
+.am-form input[type="password"]::placeholder,
+.am-form input[type="datetime"]::placeholder,
+.am-form input[type="datetime-local"]::placeholder,
+.am-form input[type="date"]::placeholder,
+.am-form input[type="month"]::placeholder,
+.am-form input[type="time"]::placeholder,
+.am-form input[type="week"]::placeholder,
+.am-form input[type="number"]::placeholder,
+.am-form input[type="email"]::placeholder,
+.am-form input[type="url"]::placeholder,
+.am-form input[type="search"]::placeholder,
+.am-form input[type="tel"]::placeholder,
+.am-form input[type="color"]::placeholder,
+.am-form-field::placeholder{color:#999999}
+.am-form select::-moz-placeholder,
+.am-form textarea::-moz-placeholder,
+.am-form input[type="text"]::-moz-placeholder,
+.am-form input[type="password"]::-moz-placeholder,
+.am-form input[type="datetime"]::-moz-placeholder,
+.am-form input[type="datetime-local"]::-moz-placeholder,
+.am-form input[type="date"]::-moz-placeholder,
+.am-form input[type="month"]::-moz-placeholder,
+.am-form input[type="time"]::-moz-placeholder,
+.am-form input[type="week"]::-moz-placeholder,
+.am-form input[type="number"]::-moz-placeholder,
+.am-form input[type="email"]::-moz-placeholder,
+.am-form input[type="url"]::-moz-placeholder,
+.am-form input[type="search"]::-moz-placeholder,
+.am-form input[type="tel"]::-moz-placeholder,
+.am-form input[type="color"]::-moz-placeholder,
+.am-form-field::-moz-placeholder{opacity:1}
+.am-form select[disabled],
+.am-form textarea[disabled],
+.am-form input[type="text"][disabled],
+.am-form input[type="password"][disabled],
+.am-form input[type="datetime"][disabled],
+.am-form input[type="datetime-local"][disabled],
+.am-form input[type="date"][disabled],
+.am-form input[type="month"][disabled],
+.am-form input[type="time"][disabled],
+.am-form input[type="week"][disabled],
+.am-form input[type="number"][disabled],
+.am-form input[type="email"][disabled],
+.am-form input[type="url"][disabled],
+.am-form input[type="search"][disabled],
+.am-form input[type="tel"][disabled],
+.am-form input[type="color"][disabled],
+.am-form-field[disabled],
+.am-form select[readonly],
+.am-form textarea[readonly],
+.am-form input[type="text"][readonly],
+.am-form input[type="password"][readonly],
+.am-form input[type="datetime"][readonly],
+.am-form input[type="datetime-local"][readonly],
+.am-form input[type="date"][readonly],
+.am-form input[type="month"][readonly],
+.am-form input[type="time"][readonly],
+.am-form input[type="week"][readonly],
+.am-form input[type="number"][readonly],
+.am-form input[type="email"][readonly],
+.am-form input[type="url"][readonly],
+.am-form input[type="search"][readonly],
+.am-form input[type="tel"][readonly],
+.am-form input[type="color"][readonly],
+.am-form-field[readonly],
+fieldset[disabled] .am-form select,
+fieldset[disabled] .am-form textarea,
+fieldset[disabled] .am-form input[type="text"],
+fieldset[disabled] .am-form input[type="password"],
+fieldset[disabled] .am-form input[type="datetime"],
+fieldset[disabled] .am-form input[type="datetime-local"],
+fieldset[disabled] .am-form input[type="date"],
+fieldset[disabled] .am-form input[type="month"],
+fieldset[disabled] .am-form input[type="time"],
+fieldset[disabled] .am-form input[type="week"],
+fieldset[disabled] .am-form input[type="number"],
+fieldset[disabled] .am-form input[type="email"],
+fieldset[disabled] .am-form input[type="url"],
+fieldset[disabled] .am-form input[type="search"],
+fieldset[disabled] .am-form input[type="tel"],
+fieldset[disabled] .am-form input[type="color"],
+fieldset[disabled] .am-form-field{cursor:not-allowed;background-color:#eeeeee}
+
+.am-form select.am-radius,
+.am-form textarea.am-radius,
+.am-form input[type="text"].am-radius,
+.am-form input[type="password"].am-radius,
+.am-form input[type="datetime"].am-radius,
+.am-form input[type="datetime-local"].am-radius,
+.am-form input[type="date"].am-radius,
+.am-form input[type="month"].am-radius,
+.am-form input[type="time"].am-radius,
+.am-form input[type="week"].am-radius,
+.am-form input[type="number"].am-radius,
+.am-form input[type="email"].am-radius,
+.am-form input[type="url"].am-radius,
+.am-form input[type="search"].am-radius,
+.am-form input[type="tel"].am-radius,
+.am-form input[type="color"].am-radius,
+.am-form-field.am-radius{border-radius:2px}
+.am-form select.am-round,
+.am-form textarea.am-round,
+.am-form input[type="text"].am-round,
+.am-form input[type="password"].am-round,
+.am-form input[type="datetime"].am-round,
+.am-form input[type="datetime-local"].am-round,
+.am-form input[type="date"].am-round,
+.am-form input[type="month"].am-round,
+.am-form input[type="time"].am-round,
+.am-form input[type="week"].am-round,
+.am-form input[type="number"].am-round,
+.am-form input[type="email"].am-round,
+.am-form input[type="url"].am-round,
+.am-form input[type="search"].am-round,
+.am-form input[type="tel"].am-round,
+.am-form input[type="color"].am-round,
+.am-form-field.am-round{border-radius:1000px}
+
+.am-form input[type="datetime-local"],
+.am-form input[type="date"],
+input[type="datetime-local"].am-form-field,
+input[type="date"].am-form-field{height:37px}
+.am-form input[type="datetime-local"].am-input-sm,
+.am-form input[type="date"].am-input-sm,
+input[type="datetime-local"].am-form-field.am-input-sm,
+input[type="date"].am-form-field.am-input-sm{height:32px}
+.am-form input[type="datetime-local"] .am-input-lg,
+.am-form input[type="date"] .am-input-lg,
+input[type="datetime-local"].am-form-field .am-input-lg,
+input[type="date"].am-form-field .am-input-lg{height:41px}
+
+/* help text */
+.am-form-help{display:block;margin-top:5px;margin-bottom:10px;color:#999999;font-size:1.3rem}
+
+/* file field */
+.am-form-file{position:relative;overflow:hidden}
+.am-form-file input[type="file"]{position:absolute;left:0;top:0;z-index:1;width:100%;opacity:0;cursor:pointer;font-size:50rem}
+
+/**
+* Checkboxes and radios
+* Indent the labels to position radios/checkboxes as hanging controls.
+*/
+.am-radio,
+.am-checkbox{display:block;min-height:1.92rem;margin-top:10px;margin-bottom:10px;padding-left:20px;vertical-align:middle}
+.am-radio label,
+.am-checkbox label{display:inline;margin-bottom:0;font-weight:normal;cursor:pointer}
+.am-radio input[type="radio"],
+.am-radio-inline input[type="radio"],
+.am-checkbox input[type="checkbox"],
+.am-checkbox-inline input[type="checkbox"]{float:left;margin-left:-20px;outline:none}
+.am-radio + .am-radio,
+.am-checkbox + .am-checkbox{margin-top:-5px}
+
+/* Radios and checkboxes inline */
+.am-radio-inline,
+.am-checkbox-inline{display:inline-block;padding-left:20px;margin-bottom:0;vertical-align:middle;font-weight:normal;cursor:pointer}
+.am-radio-inline + .am-radio-inline,
+.am-checkbox-inline + .am-checkbox-inline{margin-top:0;margin-left:10px}
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.am-radio[disabled],
+.am-radio-inline[disabled],
+.am-checkbox[disabled],
+.am-checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .am-radio,
+fieldset[disabled] .am-radio-inline,
+fieldset[disabled] .am-checkbox,
+fieldset[disabled] .am-checkbox-inline{cursor:not-allowed}
+
+/* Form field feedback states */
+.am-form-warning .am-form-help,
+.am-form-warning .am-form-label,
+.am-form-warning .am-radio,
+.am-form-warning .am-checkbox,
+.am-form-warning .am-radio-inline,
+.am-form-warning .am-checkbox-inline,
+.am-form-warning label{color:#F37B1D}
+.am-form-warning [class*="icon-"]{color:#F37B1D}
+.am-form-warning .am-form-field{border-color:#F37B1D !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075)}
+.am-form-warning .am-form-field:focus{background-color:#fefffe;border-color:#d2620b;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #f8b47e !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #f8b47e !important}
+.am-form-error .am-form-help,
+.am-form-error .am-form-label,
+.am-form-error .am-radio,
+.am-form-error .am-checkbox,
+.am-form-error .am-radio-inline,
+.am-form-error .am-checkbox-inline,
+.am-form-error label{color:#dd514c}
+.am-form-error [class*="icon-"]{color:#dd514c}
+.am-form-error .am-form-field,
+.am-field-error{border-color:#dd514c !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075)}
+.am-form-error .am-form-field:focus,
+.am-field-error:focus{background-color:#fefffe;border-color:#cf2d27;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #eda4a2 !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #eda4a2 !important}
+.am-form-success .am-form-help,
+.am-form-success .am-form-label,
+.am-form-success .am-radio,
+.am-form-success .am-checkbox,
+.am-form-success .am-radio-inline,
+.am-form-success .am-checkbox-inline,
+.am-form-success label{color:#5eb95e}
+.am-form-success [class*="icon-"]{color:#5eb95e}
+.am-form-success .am-form-field,
+.am-field-valid{border-color:#5eb95e !important;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075)}
+.am-form-success .am-form-field:focus,
+.am-field-valid:focus{background-color:#fefffe;border-color:#459f45;-webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #a5d8a5 !important;box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #a5d8a5 !important}
+
+/* Horizontal forms */
+.am-form-horizontal .am-form-label,
+.am-form-horizontal .am-radio,
+.am-form-horizontal .am-checkbox,
+.am-form-horizontal .am-radio-inline,
+.am-form-horizontal .am-checkbox-inline{margin-top:0;margin-bottom:0;padding-top:0.6em}
+.am-form-horizontal .am-form-group:before,
+.am-form-horizontal .am-form-group:after{content:" ";display:table}
+.am-form-horizontal .am-form-group:after{clear:both}
+@media only screen and (min-width:641px){
+    .am-form-horizontal .am-form-label{text-align:right}
+}
+
+/* Inline form elements */
+@media only screen and (min-width:641px){
+    .am-form-inline .am-form-group{display:inline-block;margin-bottom:0;vertical-align:middle}
+    .am-form-inline .am-form-field{display:inline-block;width:auto;vertical-align:middle}
+    .am-form-inline .am-input-group{display:inline-table;vertical-align:middle}
+    .am-form-inline .am-input-group .am-input-group-label,
+    .am-form-inline .am-input-group .am-input-group-btn,
+    .am-form-inline .am-input-group .am-form-label{width:auto}
+    .am-form-inline .am-input-group > .am-form-field{width:100%}
+    .am-form-inline .am-form-label{margin-bottom:0;vertical-align:middle}
+    .am-form-inline .am-radio,
+    .am-form-inline .am-checkbox{display:inline-block;margin-top:0;margin-bottom:0;padding-left:0;vertical-align:middle}
+    .am-form-inline .am-radio input[type="radio"],
+    .am-form-inline .am-checkbox input[type="checkbox"]{float:none;margin-left:0}
+}
+
+/* Form field size */
+.am-input-sm{font-size:1.4rem !important}
+.am-input-lg{font-size:1.8rem !important}
+.am-form-group-sm .am-checkbox,
+.am-form-group-sm .am-radio,
+.am-form-group-sm .am-form-label,
+.am-form-group-sm .am-form-field{font-size:1.4rem !important}
+.am-form-group-lg .am-checkbox,
+.am-form-group-lg .am-radio,
+.am-form-group-lg .am-form-label,
+.am-form-group-lg .am-form-field{font-size:1.8rem !important}
+.am-form-group-lg input[type="radio"],
+.am-form-group-lg input[type="checkbox"]{margin-top:7px}
+
+/* Form field feedback states */
+.am-form-icon{position:relative}
+.am-form-icon .am-form-field{padding-left:1.75em !important}
+.am-form-icon [class*='am-icon-']{position:absolute;left:0.5em;top:50%;display:block;margin-top:-0.5em;line-height:1;z-index:2}
+.am-form-icon label ~ [class*='am-icon-']{top:70%}
+
+/* Feedback Icon */
+.am-form-feedback{position:relative}
+.am-form-feedback .am-form-field{padding-left:0.5em !important;padding-right:1.75em !important}
+.am-form-feedback [class*='am-icon-']{right:0.5em;left:auto}
+.am-form-horizontal .am-form-feedback [class*='am-icon-']{right:1.6em}
+
+/* Form set */
+.am-form-set{margin-bottom:1.5rem;padding:0}
+.am-form-set > input{position:relative;top:-1px;border-radius:0 !important}
+.am-form-set > input:focus{z-index:2}
+.am-form-set > input:first-child{top:1px;border-top-right-radius:0 !important;border-top-left-radius:0 !important}
+.am-form-set > input:last-child{top:-2px;border-bottom-right-radius:0 !important;border-bottom-left-radius:0 !important}

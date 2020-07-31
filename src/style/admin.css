@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*----------	Main Css	----------*/
+#admin{width:-webkit-fill-available;height:-webkit-fill-available;min-height:-webkit-fill-available;min-width:640px;-overflow:auto;font-size:14px}
+.admin header{background:#323232;border-bottom:none;background:rgba(45,45,45,0.98)}
+.admin header a.logo{width:100px;max-height:2rem;-margin:0 0px 0 0;
+    text-indent:-99px;background-size:2rem 2rem;
+    background: url("../images/admin/icon_admin_logo.png") no-repeat center;
+    display:inline-block;overflow:hidden}
+.admin header nav ul li{line-height:50px;font-size:14px;color:#FFF;padding:0 .4rem;border-bottom:2px solid transparent;display:inline-block;cursor:pointer;flex:0 0 auto}
+.admin header nav ul li:hover{background:#1b222c;border-bottom:2px solid #457efa}
+.admin .action{background:#1b222c}
+/*----------	左侧列表	----------*/
+.admin #menu{width:110px;height:calc(100% - 56px);
+    background: #333744;
+    border-right:1px solid #D9D9D9;overflow:hidden}
+.admin #menu ul{background:#42485B}
+.admin #menu li{line-height:40px;color:#fff;text-align:center;font-size:14px;cursor:pointer;-background:#333744;position:relative;-webkit-user-select:none;-moz-user-select:none;overflow:hidden}
+.admin #menu li:hover{background:#00c1de;color:#fff}
+.sidebar-fold{height:30px !important;width:100%;background:#4a5064 !important;color:#aeb9c2;text-align:center;line-height:30px !important;font-size:12px;-ms-user-select:none;user-select:none;cursor:pointer;-webkit-user-select:none;-moz-user-select:none}
+/*----------	系统状态&主页面	----------*/
+#sysinfo h3{line-height:35px;background:#BCBCBC;font-size:14px}
+#sysinfo li{line-height:30px;font-size:14px}
+#sysinfo .sysinfos{width:10rem;display:inline-block}
+#sysinfo .sysinfos2{}
+/*----------	系统全局设置	----------*/
+#sysglobal h3{line-height:35px;background:#BCBCBC;font-size:14px}
+.statistics{width:250px;margin:10px 20px;line-height:35px;display:inline-block;vertical-align:middle}
+.radio{width:20px !important;border:1px solid red}
+/*----------	App 应用管理	----------*/
+#admin #app{width:100%;height:100%}
+#admin #app #applist{width:100%;height:100%;-margin:15px auto;-border:1px solid blue}
+#admin #app #applist ul{width:100%;height:calc(100% - 72px);overflow:auto}
+#admin #app #applist ul li{height:35px;line-height:35px;border-bottom:1px solid #e2eff8}
+#admin #app #applist ul li:hover{background:#E6F2FB}
+#admin #app #applist li span{display:inline-block;padding:0 0 0 10px}
+#admin #app #applist .empty{text-align:center;padding:80px 0;border:1px solid #636363}
+#admin #app #applist .empty a{width:100px;height:35px;margin:20px 20px;text-align:center;line-height:35px;font-size:16px;background:#f5f5f5;border:1px solid #CDCDCD;border-radius:4px;color:#636363;display:inline-block}
+#admin #app #applist .title{background:#C4C7CA}
+#admin #app #applist .app_id{width:50px}
+#admin #app #applist .app_key{width:100px}
+#admin #app #applist .app_name{width:150px}
+#admin #app #applist .app_state{width:80px}
+#admin #app #applist .app_class{width:80px}
+#admin #app #applist .app_time{width:80px}
+#admin #app #applist .app_manage{width:180px}
+#admin #app #applist .app_manage a{padding:0 5px}
+#typeselect{width:100px;height:28px;line-height:28px;border:1px solid #DCDCDC;border-radius:5px;padding-left:8px}
+#appmod{width:100%;height:100%}
+#appmod .title{height:35px;line-height:35px;background:#ECEDF0}
+#appmod .title a{padding:0 10px;display:inline-block}
+#appmod .title a:hover{color:#6CA932}
+#appmod .title a i{width:18px;height:18px;margin:0 10px;background:url('../images/developer/sidebar-icon.png') no-repeat;display:inline-block;vertical-align:middle}
+#appmod article{width:100%;height:calc(100% - 35px);overflow:auto}
+#appmod article .form_panel{width:800px;line-height:30px;margin:10px auto}
+#appmod article .panel_tit{width:80px;display:inline-block;vertical-align:top}
+#appmod article .panel_wrap{width:350px;display:inline-block}
+#appmod article .inputstyle{width:200px;height:30px;line-height:30px;display:inline-block;text-indent:1em}
+#appmod article .validate_tips{width:200px;display:inline-block}
+/*-----	Basic 基本信息	-----*/
+#appmod form{background:#FFF}
+#appmod form ul li{padding:20px 0}
+#appmod label{width:75px;height:30px;line-height:30px;margin:0 0 0 10px;display:inline-block;vertical-align:top}
+#appmod ul li input{width:430px;height:30px;text-indent:1em;display:inline-block;border:1px solid #E6E6E6}
+#appmod select{width:108px;height:30px;border:1px solid #DCDCDC;border-radius:5px;padding-left:8px;-text-indent:1em}
+#appmod textarea{width:630px;height:120px;line-height:25px;text-indent:1em;display:inline-block;border:1px solid #DCDCDC}
+#appmod .radios{width:40px;height:25px;vertical-align:middle}
+#appmod .dosubmit{width:120px;height:30px;margin:0 0 0 120px;line-height:30px;background:#FE9D1F;border:1px solid #BCBCBC;border-radius:10px;text-indent:0}
+/*-----	Icon 图片素材	-----*/
+#appicon{width:100%;height:130px}
+#appicon span{-width:120px;-height:130px;margin:0 30px;display:inline-block;position:relative}
+#appicon span img{margin:0 auto;display:block;vertical-align:bottom}
+#appicon span p{text-align:center;line-height:30px}
+#apppic .preview{width:600px;height:300px;margin:0 auto;position:relative}
+#apppic .preview img{width:450px;height:300px;margin:0 auto;display:block}
+#apppic .but{width:40px;height:60px;color:#C4E9FC;font-size:50px;text-align:center;line-height:55px;position:absolute;top:calc(50% - 45px);cursor:pointer}
+#apppic .but:hover{background:rgba(0,0,0,0.3)}
+#apppic .switch{width:600px;height:100px;margin:0 auto}
+#apppic .switch span{width:80px;height:100px;margin:10px 18px;position:relative;display:inline-block}
+#apppic .switch img{margin:0 auto;display:block}
+#apppic .switch p{text-align:center;line-height:30px}
+/*----- Input Type File 定位+隐藏 -----*/
+.inputfile{width:100% !important;;height:100% !important;;position:absolute;top:0;right:0;opacity:0;display:block !important}
+/**************************************/
+#main .msg-box{-margin:2px;border-top:2px solid #bbb}
+#main .mess{text-indent:25px;background:url("../images/admin/dot2.gif") no-repeat 10px}
+#main .mar{margin:10px}
+#main .viewmess li{float:left !important;float:none;padding-top:6px;padding-bottom:6px;border-bottom:1px solid #ddd}
+.piclist{width:100px;height:100px;float:left;margin:10px 0 0 10px;overflow:hidden;border:1px solid #aaa}
+#main .col_width2{float:left !important;float:none;margin-left:30px;width:50%}
+#main .list_width{float:left !important;float:none;-margin-left:20px;width:10%;word-break:break-all}
+.width_font{font-weight:bold}
+#pop_win{display:none;width:600px;background:#FFF;border:1px solid #BBB;background:#FBFBFB;padding:3px;position:absolute;left:50%;top:25%;margin-left:-300px;z-index:1}
+#bottom{width:100%;height:100%;background:url("../images/admin/bottombg.gif")}
+#bottom ul li{line-height:24px;text-indent:28px}
+#bottom ul .left{float:left;background:url("../images/admin/copy.gif") no-repeat 10px 6px}
+#bottom ul .right{float:right;background:url('../images/admin/time.gif') no-repeat 10px 5px}
+.newwater{width:250px;height:100px;border:1px solid #D9D9D9}
+.newwater img{width:200px;height:70px;margin:15px auto;vertical-align:middle}
+.changewater{width:100px;height:30px;-margin:10px 30px !important;background:#F5F5F5;border:1px solid #BCBCBC;border-radius:10px;vertical-align:middle;cursor:pointer}
+.text-box2{width:67px;margin:10px 20px;padding-left:10px;line-height:25px;display:inline-block;font-size:12px;font-family:verdana,sans-serif;color:#777}
+.exetime{padding-left:15px;background:url("../images/admin/exetime.gif") no-repeat}
+/*----------	设置水印	----------*/
+.newwater{width:250px;height:100px;border:1px solid #D9D9D9}
+.newwater img{width:200px;height:70px;margin:15px auto;vertical-align:middle}
+.changewater{width:100px;height:30px;-margin:10px 30px !important;background:#F5F5F5;border:1px solid #BCBCBC;border-radius:10px;vertical-align:middle;cursor:pointer}
+.text-box2{width:67px;margin:10px 20px;padding-left:10px;line-height:25px;display:inline-block;font-size:12px;font-family:verdana,sans-serif;color:#777}
+#chart{width:100%;height:100%}
+/*----------	系统工具&清除缓存	----------*/
+#clearcache .clearfile{width:800px;margin:0 auto;clear:both;background:#F5F5F5;border:1px dotted #778855}
+#clearcache .bot label{line-height:30px;margin:0 15px 0 0;cursor:pointer}
+#clearcache .cleartips{width:98%;height:250px;margin:10px auto;border:1px dotted red}
+/*----------	Shop 商品	----------*/
+.view-row{}
+.view-row .list-row{width:220px;height:300px;-line-height:30px;margin:10px;position:relative;background:#F0F0F0;display:inline-block}
+.view-row .list-row .active{-width:220px;-height:170px;position:absolute;top:0;right:0;display:none}
+.view-row .list-row .active a{width:80px;height:80px;margin:0 10px 50px;display:inline-block}
+.view-row .list-row .active a:hover{background:rgba(0,0,0,0.1)}
+.view-row .list-row .active button{padding:6px 20px;margin:0 10px;display:inline-block}
+.view-row .list-row .active a[menu="modify"]{background:url("../images/market/reload.png") no-repeat 30px 20px;background-size:50px 50px}
+.view-row .list-row .active a[menu="delete"]{background:url("../images/market/delete.png") no-repeat 10px 20px;background-size:50px 50px}
+.view-row .list-row:hover,.view-row .list-row:hover .active{display:inline-block}
+.view-row .list-row .picture{-width:180px;height:200px;margin:0 auto;display:block}
+.view-row .list-row .title{padding:4px 0 0;height:36px;overflow:hidden;line-height:18px;word-break:break-all;font-size:100%;font-weight:400}
+.view-row .list-row .price{width:50px;font-weight:bold}
+.view-row .list-row .gid{width:100px}
+.view-row .list-row .name{width:150px}
+.view-row .list-row .act{width:250px;display:none}
+.view-row .list-row .act button{padding:0 3px}
+.view-row .list-row:hover .act{display:block}
+.goods .list-row span{-font-weight:bold;display:inline-block;text-align:center}
+.way{width:70px;height:90px;margin:20px 20px;-line-height:30px;text-align:center;background:#F4F4F4;font-size:14px;border-radius:6px;border:1px solid #9AA0A3;display:inline-block;position:relative;vertical-align:middle}
+.way .uppic{position:absolute;top:0;right:0;width:100%;height:100%;opacity:0;-background:none repeat scroll 0 0 transparent;cursor:inherit;display:block}
+#tips{width:500px;height:300px;line-height:30px;border:1px solid blue;border-radius:3.5%;padding:10px;background:#fff;position:fixed;top:calc(50% - 150px);left:calc(50% - 250px)}
+.test{background:yellow}

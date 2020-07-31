@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>智能物业管理系统</title>
+    <meta name="keywords" content="物业管理系统,物业收费系统,物业管理软件,物业收费软件,小区物业管理,小区物业管理系统,物业管理服务">
+    <meta name="description" content="物业管理系统是现代居住小区不可缺少的一部分。一个好的物业管理系统可以提升小区的管理水平，使小区的日常管理更加方便。将计算机的强大功能与现代的管理思想相结合，建立现代的智能小区是物业管理发展的方向。重视现代化的管理，重视细致周到的服务是小区工作的宗旨。以提高物业管理的经济效益、管理水平，确保取得最大经济效益为目标。">
+    <meta name="copyright" content="Copyright &copy; 2009-2020 天府联盟 版权所有">
+    <meta name="telephone" content="0377-61157030">
+    <meta name="author" content="Mark, report@tianfuunion.cn">
+    <meta name="generator" content="大转移.3.1.1.1.201905181730">
+    <!-- 定义页面的最新版本 -->
+    <meta name="revised" content="">
+
+    <meta name="MSSmartTagsPreventParsing" content="True">
+    <meta http-equiv="MSThemeCompatible" content="Yes">
+
+    <meta name="location" content="province=河南;city=南阳;coord=112.5428391,33.0114212">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"><!-- 自定义 -->
+    <meta name="mark-id" content="10013">
+
+    <meta name="referrer" content="always">
+
+    <!-- 不让百度转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+
+    <!-- 设置页面不缓存 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="14400">
+
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <!-- 优先使用 IE 最新版本和 Chrome 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="aplus-terminal" content="1">
+
+    <!-- 搜索引擎抓取 -->
+    <meta name="robots" content="index,follow">
+
+    <!-- 为移动设备添加 viewport 网页宽度默认等于屏幕宽度（width=device-width），原始缩放比例（initial-scale=1）为1.0，即网页初始大小占屏幕面积的100%。 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+    <!-- iOS 设备 begin -->
+    <!-- 添加到主屏后的标题（iOS 6 新增） -->
+    <meta name="apple-mobile-web-app-title" content="智能物业管理系统">
+
+    <!--iPhone私有标签，表示允许全屏模式浏览，即取消顶部工具栏:是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-touch-fullscreen" content="yes">
+
+    <!--iPhone私有标签，表示safari顶端的状态条的样式 设置苹果工具栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=http://v3.property.tianfuunion.com">
+
+    <!-- iOS 图标 begin -->
+    <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+    <!-- <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"> -->
+    <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"> -->
+    <!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"> -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/logo.png">
+    <!-- iOS 图标 end -->
+
+    <!-- iOS 启动画面 begin -->
+    <!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+    <!-- <link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"> -->
+    <!-- iPad 竖屏 1536x2008（Retina） -->
+    <!-- <link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"> -->
+    <!-- iPad 横屏 1024x748（标准分辨率） -->
+    <!-- <link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"> -->
+    <!-- iPad 横屏 2048x1496（Retina） -->
+    <!-- <link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"> -->
+
+    <!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+    <!-- <link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"> -->
+    <!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+    <!-- <link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"> -->
+    <!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+    <!-- <link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"> -->
+
+    <!-- iOS 启动画面 end -->
+    <!-- iOS 设备 end -->
+
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Windows 8 磁贴颜色 -->
+    <meta name="msapplication-TileColor" content="#000">
+    <!-- Windows 8 磁贴图标 -->
+    <meta name="msapplication-TileImage" content="icon.png">
+
+    <!-- 设定离开页面时的特殊效果 -->
+    <meta http-equiv="Page-Exit" contect="revealTrans(duration=1.0,transtion=23)">
+
+
+    <!-- 添加 RSS 订阅 -->
+    <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"> -->
+    <!-- 添加 favicon icon -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/jquery/script/jquery-2.2.4.min.js?v=2.2.4"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/amazeui/style/amazeui.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/amazeui/style/admin.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/amazeui/style/app.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/table/style/mark.table.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/validform/style/mark.form.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/console.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/weui/style/weui.min.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/weui/style/jquery-weui.min.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/commons.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/auto.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/property.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/account.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/navigation-responsive.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/style/header-responsive.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="https://res.tianfu.pub/collapse/style/mark.collapse.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="//at.alicdn.com/t/font_279187_yy9s9zhq21i.css?v=1587052606">
+    <link type="text/css" rel="stylesheet" href="//at.alicdn.com/t/font_1620829_4xyxjobbj2h.css?v=1587052606">
+
+    <script type="text/javascript">
+        /*cookie前缀，避免重名*/
+        var cookie_prefix = "";
+        window.onbeforeunload = function (e) {
+            // return "请确认是否真的要离开该页面？";
+        };
+        var _speedMark = new Date();
+    </script>
+    <script type="text/javascript">
+        var tf_mk = tf_mk || [];
+        tf_mk.push(["siteid", "10013"]);
+        tf_mk.push(["mark", "TianFuProperty"]);
+        tf_mk.push(["uuid", "12"]);
+        (function () {
+            let ma = document.createElement("script");
+            ma.defer = "defer";
+            ma.src = "https://res.tianfu.pub/analytics/script/mark.analytics.min.js?v=1.0.0";
+            let s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ma, s);
+        })();
+
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?044c8781ce2f8a9afb835b799c8b21c9";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+<body class="[theme] property console"
+      scroll="no"
+      ontouchstart=""
+      data-controller="console"
+      data-action="desktop"
+      data-state=""
+      data-type=""
+      data-iswebview="false">
+<header class="header-responsive am-topbar am-topbar-inverse admin-header bluemode [class] [style]">
+    <nav class="nav-flex navigationBarBgColor">
+        <a class="nav-left nav-logo center wrap" href="javascript:void(0);" data-target="#mk-collapse-left">
+            <img class="logo" src="http://v3.property.tianfuunion.com/static/logo_square_white.png" data-src="/static/logo.png" alt="Logo" title="智能物业管理系统">
+        </a>
+        <div class="navigation-middle nav-middle -am-collapse -am-topbar-collapse">
+
+            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list am-hide-sm-only">
+                <li class="am-hide-sm-only am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link navigationBarTextColor" href="javascript:void(0);">
+                        <span class="am-icon-icon-analysis"></span>
+                        数据分析 <span class="am-badge tpl-badge-success am-round hide">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/analysis/overview" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-sector-graph tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                物业概述 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/analysis/property" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-city tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                资产分析 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/analysis/metering" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-operate tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                抄表分析 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/analysis/expense" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-money-bag tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                收费分析 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link navigationBarTextColor" href="javascript:void(0);">
+                        <span class="am-icon-icon-finance"></span>
+                        收费管理 <span class="am-badge tpl-badge-success am-round hide">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/expense.php/record/cashier" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-platform-yellow tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                收银台 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/expense.php/record/imported" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-money-import tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                费用录入 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/expense.php/trade" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-order-blue tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                收款记录 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/expense.php/category" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-wuyefei tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                费用类别 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/expense.php/bill" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-ticket tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                票据设置 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link navigationBarTextColor" href="javascript:void(0);">
+                        <span class="am-icon-icon-meter"></span>
+                        计量抄表 <span class="am-badge tpl-badge-success am-round hide">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/record/reading" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-phone-wifi tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                抄表管理 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/record/batch" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-electric tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                批量抄表 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/record/query" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-search-blue tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                抄表查询 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/record/export" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-export tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                导出记录 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/calculate" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-calculate tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                计算费用 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/metering.php/category" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-classify tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                计量类别 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link navigationBarTextColor" href="javascript:void(0);">
+                        <span class="am-icon-icon-enterprise-auth"></span>
+                        物业管理 <span class="am-badge tpl-badge-success am-round hide">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/property" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-enterprise-auth tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                项目管理 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/building" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-city tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                资产管理 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/house/state" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-makesure tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                资产状态 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/relation" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-relation tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                客户关系 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/property.php/category" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-classify tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                资产类别 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-hide-sm-only am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link navigationBarTextColor" href="javascript:void(0);">
+                        <span class="am-icon-icon-avatar"></span>
+                        账户管理 <span class="am-badge tpl-badge-success am-round hide">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/account.php/account/employee" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-avatar-occupation tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                员工管理 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/account.php/account/role" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-avatar-occupation tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                员工角色 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/account.php/union/choice" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-refresh tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                切换授权 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                        <li class="tpl-dropdown-content-external">
+                            <a href="http://v3.property.tianfuunion.com/account.php/account/logout" class="tpl-dropdown-list-fl">
+                                <span class="am-icon-btn icon-logout tpl-dropdown-ico-btn-size tpl-badge-success"></span>
+                                退出登录 </a>
+                            <span class="tpl-dropdown-list-fr"></span>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-dropdown hide" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:void(0);">
+                        <span class="am-icon-bell-o"></span> 提醒
+                        <span class="am-badge tpl-badge-success am-round">5</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3>
+                            <a class="float-right" href="javascript:void(0);">全部</a></li>
+                        <li class="tpl-dropdown-list-bdbc">
+                            <a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>
+                            <span class="tpl-dropdown-list-fr">3小时前</span>
+                        </li>
+                        <li class="tpl-dropdown-list-bdbc">
+                            <a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> 移动端，导航条下边距处理</a>
+                            <span class="tpl-dropdown-list-fr">15分钟前</span>
+                        </li>
+                        <li class="tpl-dropdown-list-bdbc">
+                            <a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> 追加统计代码</a>
+                            <span class="tpl-dropdown-list-fr">2天前</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="am-dropdown hide" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:void(0);">
+                        <span class="am-icon-comment-o"></span> 消息
+                        <span class="am-badge tpl-badge-danger am-round">9</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
+                            <a class="float-right" href="javascript:void(0);">全部</a></li>
+                        <li>
+                            <a href="#" class="tpl-dropdown-content-message">
+                                <span class="tpl-dropdown-content-photo">
+                      <img src="https://res.tianfu.pub/amazeui/images/user02.png" alt=""> </span>
+                                <span class="tpl-dropdown-content-subject">
+                      <span class="tpl-dropdown-content-from"> 禁言小张 </span>
+                                <span class="tpl-dropdown-content-time">10分钟前 </span>
+                                </span>
+                                <span class="tpl-dropdown-content-font"> Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。 </span>
+                            </a>
+                            <a href="#" class="tpl-dropdown-content-message">
+                                <span class="tpl-dropdown-content-photo">
+                      <img src="https://res.tianfu.pub/amazeui/images/user03.png" alt=""> </span>
+                                <span class="tpl-dropdown-content-subject">
+                      <span class="tpl-dropdown-content-from"> Steam </span>
+                                <span class="tpl-dropdown-content-time">18分钟前</span>
+                                </span>
+                                <span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="am-dropdown hide" data-am-dropdown data-am-dropdown-toggle>
+                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:void(0);">
+                        <span class="am-icon-calendar"></span> 进度
+                        <span class="am-badge tpl-badge-primary am-round">4</span>
+                    </a>
+                    <ul class="am-dropdown-content tpl-dropdown-content">
+                        <li class="tpl-dropdown-content-external">
+                            <h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
+                            <a class="float-right" href="javascript:void(0);">全部</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                                    <span class="desc">Amaze UI 用户中心 v1.2 </span>
+                                    <span class="percent">45%</span>
+                                </span>
+                                <span class="progress">
+                        <div class="am-progress tpl-progress am-progress-striped">
+                            <div class="am-progress-bar am-progress-bar-success" style="width:45%"></div>
+                        </div>
+                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                        <span class="desc">新闻内容页 </span>
+                                <span class="percent">30%</span>
+                                </span>
+                                <span class="progress">
+                       <div class="am-progress tpl-progress am-progress-striped">
+                           <div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div>
+                       </div>
+                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="tpl-dropdown-content-progress">
+                                <span class="task">
+                        <span class="desc">管理中心 </span>
+                                <span class="percent">60%</span>
+                                </span>
+                                <span class="progress">
+                        <div class="am-progress tpl-progress am-progress-striped">
+                            <div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div>
+                        </div>
+                    </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right center wrap am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+            <a class="nav-user am-dropdown-toggle tpl-header-list-link" href="javascript:void(0);" data-target="#mk-collapse-menubar">
+                <img class="avatar border circle" src="https://account.tianfuunion.com/avatar/av_12_15356069720673308.png" alt="">
+            </a>
+        </div>
+    </nav>
+
+</header>
+
+<div id="mk-collapse-left" class="collapse mk-collapse-container mk-sidebar-left top-50px"
+     data-title="左侧边栏"
+     data-id="mk-collapse"
+     data-token="mk-collapse-sidebar-left-1"
+     data-module="mk-collapse"
+     data-type="sidebar"
+     data-animation=""
+     data-gravity="sidebar-left"
+     data-defined="false"
+     data-overlay="true"
+     data-searchbar="true"
+     data-collapse="false"
+     data-required="true"
+     data-target="true"
+     debug="false"
+     data-debug="true"
+     data-cache="true"
+     data-expire="14400"
+     data-project="property"
+     data-controller="console"
+     data-action="desktop"
+     data-url="https://account.nyhbqc.com/api.php/ram/sidebar?action=list&type=sidebar&cache=true&roleid=1">
+</div>
+
+<div id="mk-collapse-menubar" class="collapse mk-collapse-container mk-menubar-top top-50px"
+     data-title="菜单栏"
+     data-id="mk-collapse-menubar"
+     data-token="mk-collapse-menubar-1"
+     data-module="mk-collapse"
+     data-type="menubar"
+     data-animation=""
+     data-gravity="menubar"
+     data-defined="false"
+     data-overlay="false"
+     data-searchbar="false"
+     data-collapse="false"
+     data-required="true"
+     debug="false"
+     data-debug="true"
+     data-cache="true"
+     data-expire="14400"
+     data-project="property"
+     data-controller="console"
+     data-action="desktop"
+     data-url="https://account.nyhbqc.com/api.php/ram/menubar?action=list&type=menubar&cache=true&roleid=1">
+</div>
+<script type="text/javascript">
+    document.body.style.paddingTop = "50px";
+
+    $(document).ready(function () {
+        if (window.top !== window.self) {
+            top.location = self.location;
+        }
+    });
+</script>
+<div class='wrap bg-titlebar hide'>
+    <div class="container wrap weui-media-box weui-media-box_appmsg">
+
+        <div class="weui-media-box__hd -width-auto height-auto">
+            <img class="avatar radius border2 icon-huge" src="https://account.tianfuunion.com/avatar/av_12_15356069720673308.png" alt="">
+            <h3 class="weui-media-box__title color-white line4 webkit-inline-box">
+                Admin（超级管理员）
+            </h3>
+        </div>
+
+        <div class="weui-media-box__bd center">
+            <p class="user-integral color-white"></p>
+            <h3 class="weui-media-box__title color-white line3 mt-2rem"></h3>
+        </div>
+
+        <div class="weui-media-box__ft hide" style="margin-top:-50px;">
+            <a class="y mr" href="https://account.tianfuunion.com/account.php/member/notice" title="消息中心">
+                <svg class="icon color-white" aria-hidden="true">
+                    <use xlink:href="#icon-chat2"></use>
+                </svg>
+            </a>
+            <a class="y mr" href="https://account.tianfuunion.com/account.php/setting" title="设置中心">
+                <svg class="icon color-white" aria-hidden="true">
+                    <use xlink:href="#icon-set"></use>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+    <div class="weui-flex border-top">
+        <a class="weui-flex__item center line3 color-white border-right" href="/property.php/subscribe">
+            <svg class="iconfont icon icon-symbol" aria-hidden="true">
+                <use xlink:href="#icon-subscribe"></use>
+            </svg>
+            <span>订阅报告</span>
+        </a>
+        <a class="weui-flex__item center line3 color-white border-right" href="javascript:void(0);">
+            <svg class="iconfont icon icon-symbol " aria-hidden="true">
+                <use xlink:href="#icon-favorite"></use>
+            </svg>
+            <span>收藏夹</span>
+        </a>
+        <a class="weui-flex__item center line3 color-white" href="https://property.tianfuunion.com" target="_blank">
+            <svg class="iconfont icon icon-symbol color-white" aria-hidden="true">
+                <use xlink:href="#icon-administer"></use>
+            </svg>
+            <span>返回旧版</span>
+        </a>
+    </div>
+</div>
+
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd hide">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:void(0);">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-logout color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>收费提醒</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap center max-width-1440px -weui-media-box -weui-media-box_appmsg">
+            <div class="-weui-flex__item wrap center mtb20 mr2 border-gray radius6 min-height-20rem max-height-20rem min-width-300px max-width-414px inline-block vertical-align-middle" id="collected"></div>
+            <div class="-weui-flex__item wrap center mtb20 mr2 border-gray radius6 min-height-20rem max-height-20rem min-width-300px max-width-414px inline-block vertical-align-middle">
+                <div class="weui-form-preview">
+                    <div class="weui-form-preview__hd">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">未收费用</label>
+                            <em class="weui-form-preview__value text-warning">¥ 136251.00</em>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__bd min-height-10rem max-height-15rem overflow-auto">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">电费</label>
+                            <span class="weui-form-preview__value">￥：93967.00（1254笔未收）</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">水费</label>
+                            <span class="weui-form-preview__value">￥：42284.00（2014笔未收）</span>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__ft hide">
+                        <a type="submit" class="weui-form-preview__btn weui-form-preview__btn_default" href="javascript:void(0);">辅助</a>
+                        <a type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:void(0);">操作</a>
+                    </div>
+                </div>
+            </div>
+            <div class="-weui-flex__item wrap center mtb20 mr2 border-gray radius6 min-height-20rem max-height-20rem min-width-300px max-width-414px inline-block vertical-align-middle" id="accepted"></div>
+            <div class="-weui-flex__item wrap center mtb20 mr2 border-gray radius6 min-height-20rem max-height-20rem min-width-300px max-width-414px inline-block vertical-align-middle">
+                <div class="weui-form-preview">
+                    <div class="weui-form-preview__hd">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">已收费用</label>
+                            <em class="weui-form-preview__value text-warning">¥ 477244.00</em>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__bd min-height-10rem max-height-15rem overflow-auto">
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">电费</label>
+                            <span class="weui-form-preview__value">￥：325218.00（2853笔已收）</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">水费</label>
+                            <span class="weui-form-preview__value">￥：149206.00（4330笔已收）</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">装修保证金</label>
+                            <span class="weui-form-preview__value">￥：2100.00（1笔已收）</span>
+                        </div>
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">装修垃圾清运费</label>
+                            <span class="weui-form-preview__value">￥：720.00（1笔已收）</span>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__ft hide">
+                        <a type="submit" class="weui-form-preview__btn weui-form-preview__btn_default" href="javascript:void(0);">辅助</a>
+                        <a type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:void(0);">操作</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+
+    <div class="weui-panel__ft container wrap max-width-80">
+        <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+            <div class="weui-cell__bd">查看更多</div>
+            <span class="weui-cell__ft"></span>
+        </a>
+    </div>
+</div>
+
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/property.php/console" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-rudder color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>控制台</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/property.php/console/desktop" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-desktop font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">桌面</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/multiple" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_blank">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-process-engine font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">联动选择器</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/remote" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_blank">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-gyroscope font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">远程调用</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/matrix" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_blank">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-app font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">数独矩阵</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/optimizer" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium am-icon-heartbeat font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">安全检测</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/clear" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-clear font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">清除缓存</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/subscribe" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-subscribe font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">订阅报告</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/subscribe/contact" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-column font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">订阅列表</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/console/console" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-enterprise-auth font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">物业管理</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/property.php/analysis" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-analysis color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>数据分析</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/property.php/analysis/overview" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-sector-graph font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">物业概述</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/analysis/property" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-city font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">资产分析</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/analysis/metering" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-operate font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">抄表分析</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/analysis/expense" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-money-bag font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">收费分析</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/expense.php" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-finance color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>收费管理</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/expense.php/record/cashier" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-platform-yellow font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">收银台</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/expense.php/record/imported" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-money-import font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">费用录入</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/expense.php/trade" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-order-blue font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">收款记录</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/expense.php/category" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-wuyefei font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">费用类别</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/expense.php/bill" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-ticket font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">票据设置</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/metering.php" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-meter color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>计量抄表</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/metering.php/record/reading" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-phone-wifi font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">抄表管理</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/metering.php/record/batch" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-electric font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">批量抄表</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/metering.php/record/query" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-search-blue font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">抄表查询</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/metering.php/record/export" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-export font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">导出记录</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/metering.php/calculate" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-calculate font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">计算费用</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/metering.php/category" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-classify font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">计量类别</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/property.php" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-enterprise-auth color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>物业管理</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/property.php/property" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-enterprise-auth font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">项目管理</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/building" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-city font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">资产管理</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/house/state" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-makesure font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">资产状态</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/relation" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-relation font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">客户关系</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/property.php/category" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-classify font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">资产类别</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_small-appmsg container wrap max-width-80">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="http://v3.property.tianfuunion.com/account.php/account" target="_self">
+                    <div class="weui-cell__hd">
+                        <i class="weui-grid__icon iconfont icon icon-medium icon-avatar color-blue font-size-20px"></i>
+                    </div>
+                    <div class="weui-cell__bd weui-cell_primary"><p>账户管理</p></div>
+                    <span class="weui-cell__ft"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="weui-panel__bd">
+        <div class="-weui-flex container wrap max-width-80">
+            <a href="http://v3.property.tianfuunion.com/account.php/account/employee" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-avatar-occupation font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">员工管理</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/account.php/account/role" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-avatar-occupation font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">员工角色</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/account.php/union/choice" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-refresh font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">切换授权</p>
+            </a>
+            <a href="http://v3.property.tianfuunion.com/account.php/account/logout" class="weui-flex__item center mtb20 width-percent-16 float-left" target="_self">
+                <i class="weui-grid__icon iconfont icon icon-medium icon-logout font-size-2rem color-blue"></i>
+                <p class="weui-grid__label">退出登录</p>
+            </a>
+        </div>
+        <div class="weui-flex"></div>
+    </div>
+</div>
+
+<div class="weui-panel weui-cells weui-panel_access">
+    <a class="weui-cell weui-cell_access container wrap max-width-80" href="/account.php/home/invitation">
+        <div class="weui-cell__hd">
+            <svg class="weui-cell__hd weui-grid__icon icon-symbol icon" aria-hidden="true" style="width:20px;margin-right:5px;">
+                <use xlink:href="#icon-gift-blue"></use>
+            </svg>
+        </div>
+        <div class="weui-cell__bd weui-cell_primary">推荐给好友</div>
+        <div class="weui-cell__ft"><b class="hide">邀请可得20元优惠券</b></div>
+    </a>
+
+    <a class="weui-cell weui-cell_access container wrap max-width-80" href="http://m.nyhbqc.com/helper.php/faq/index?from=TianFuProperty&source=member" target="_blank">
+        <div class="weui-cell__hd">
+            <svg class="weui-cell__hd weui-grid__icon icon-symbol icon" aria-hidden="true" style="width:20px;margin-right:5px;">
+                <use xlink:href="#icon-lighting"></use>
+            </svg>
+        </div>
+        <div class="weui-cell__bd weui-cell_primary">帮助与反馈</div>
+        <div class="weui-cell__ft"></div>
+    </a>
+    <meta name="format-detection" content="telephone=yes">
+    <a class="weui-cell weui-cell_access container wrap max-width-80" href="tel:0377-61157030">
+        <div class="weui-cell__hd">
+            <svg class="weui-cell__hd weui-grid__icon icon-symbol icon" aria-hidden="true" style="color:#0a84FF;width:20px;margin-right:5px;">
+                <use xlink:href="#icon-call"></use>
+            </svg>
+        </div>
+        <div class="weui-cell__bd weui-cell_primary">客服电话</div>
+        <span class="weui-cell__ft">0377-61157030</span>
+    </a>
+
+    <a class="weui-cell weui-cell_access container wrap max-width-80 hide" href="http://m.nyhbqc.com/helper.php/kefu/meiqia?from=TianFuProperty&source=member" target="_blank">
+        <div class="weui-cell__hd">
+            <svg class="weui-cell__hd weui-grid__icon icon-symbol icon" aria-hidden="true" style="width:20px;margin-right:5px;">
+                <use xlink:href="#icon-kefu"></use>
+            </svg>
+        </div>
+        <div class="weui-cell__bd weui-cell_primary">在线客服</div>
+        <span class="weui-cell__ft"></span>
+    </a>
+
+    <a class="weui-cell weui-cell_access container wrap max-width-80" href="https://account.tianfuunion.com/account.php/setting">
+        <div class="weui-cell__hd">
+            <svg class="weui-cell__hd weui-grid__icon icon-symbol icon" aria-hidden="true" style="width:20px;margin-right:5px;">
+                <use xlink:href="#icon-set"></use>
+            </svg>
+        </div>
+        <div class="weui-cell__bd weui-cell_primary">设置</div>
+        <div class="weui-cell__ft"></div>
+    </a>
+</div>
+<div class="height-10rem bg-white"></div>
+
+<footer class="portal">
+    <div class="copyright"><a href="http://v3.property.tianfuunion.com">Copyright &copy; 2009-2020 天府联盟 版权所有</a></div>
+    <div class="beian">
+        <a class="wanganbeian" target="_blank" rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41130202000199">
+            <img src="https://res.tianfu.pub/images/beian_wangan.png" alt=""/>
+            <span>豫公网安备 41130202000199号</span>
+        </a>
+        <a class="mitbeian" target="_blank" rel="nofollow" href="http://www.beian.miit.gov.cn">
+            <span>（豫ICP备14021536号）</span>
+        </a>
+    </div>
+</footer>
+<input type="hidden" id="token" value="">
+<div class="mask loading hide"></div>
+<!-- defer="ture" async="ture"  -->
+
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/mark/script/mark.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/table/script/mark.table.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/validform/script/mark.verify.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/weui/script/weui.min.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/weui/script/jquery-weui.min.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/weui/script/fastclick.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/collapse/script/mark.collapse.js?v=1587052606"></script>
+<script type="text/javascript" charset="utf-8" src="https://at.alicdn.com/t/font_279187_yy9s9zhq21i.js?v=1587052606"></script>
+
+<script type="text/javascript" charset="utf-8" src="https://res.tianfu.pub/mark/script/mark.viewer.js?v=1580382"></script>
+<script type="text/javascript">
+    var offset_top = 0;
+    window.onload = function () {
+        document.body.onselectstart = document.body.ondrag = function () {
+            return false;
+        }
+    };
+    $(function () {
+        FastClick.attach(document.body);
+        $(".loading").hide();
+    });
+
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+            document.querySelector(".loading").classList.add("hide");
+        }, false);
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        console.error("Mark::Viewer()", "https://res.tianfu.pub/mark/script/viewer.htm?t=" + new Date().getTime());
+        console.debug("Empty::", $("#token").val().isEmpty());
+
+    });
+
+</script>
+</body>
+</html>

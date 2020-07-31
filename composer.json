@@ -1,0 +1,46 @@
+{
+  "name": "tianfuunion/mark-resources",
+  "description": "The TianFu Union Mark Engine resources manage system.",
+  "keywords": [
+    "tianfuunion",
+    "markengine",
+    "mark-resources"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "http://open.tianfu.ink",
+  "authors": [
+    {
+      "name": "Mark Young",
+      "email": "mark@tianfuunion.cn"
+    }
+  ],
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "mark\\": "src"
+    },
+    "psr-0": {
+      "": "extend/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}

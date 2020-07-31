@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/**********************************************************************************
+* |	I Home PHP	&	Home PHP	(C) Zong Inc. Created & Modified by Zong.	| *
+* +----------------------------------------------------------------------------+ *
+* |	Copyright © 2012-2017 Zong Inc. All Rights Reserved						| *
+* +----------------------------------------------------------------------------+ *
+* |	Website:( http://www.zongdongyang.com.cn )								| *
+* +----------------------------------------------------------------------------+ *
+* |	Author:Zong <zongdongyang@126.com>										+ *
+* +----------------------------------------------------------------------------+ *
+* |	$Date:2015-10-12 10:00:00 $ 											| *
+* ********************************************************************************/
+/*----------	应用商店	----------*/
+#app-store{width:100%;height:100%;border:1px solid #D9D9D9;margin:0 auto;background:rgba(0, 0, 0, 0.5);z-index:100;display:block}
+/*----------	应用头部	----------*/
+#app-header{width:100%;height:50px;background:#48C93D;-border-radius:10px 10px 0 0;color:#fff;position:relative}
+.app-avatar{width:100px;height:50px;-border:1px solid red}
+.app-avatar img{width:45px;height:45px;padding:1px;margin:0 26.5px;border-radius:50px;-background:#fff}
+.app-avatar img:hover{-padding:2px;-background:#fff;border:2px solid #fff}
+#app-header li{float:left;font-size:14px;line-height:50px}
+#app-header li:hover, .app-lia{background:rgba(0, 0, 0, 0.3)}
+#app-header li a{color:#FFF;width:100%;padding:0 12px}
+/*----------	应用关闭按钮	----------*/
+.app-search{width:200px;height:22px;margin:15px 15px 0;background:#fff;border-radius:10px;display:block}
+.app-search input{width:165px;height:22px;padding-left:5px}
+.app-search img{float:right;margin:2px 5px}
+.app-search img:hover{-border-radius:10px;-border:1px solid transparent}
+/*----------	应用侧边栏	----------*/
+#app-sidebar{width:100px;height:100%;background:#ccc;border-right:2px solid #e5e5e5}
+#app-sidebar li{line-height:30px}
+#app-sidebar li:hover{background:rgba(0, 0, 0, 0.3)}
+#app-sidebar li a{padding-left:20px;color:#333}
+#app-sidebar li span{width:30px;height:30px;border:1px solid red}
+.app_nvs{ /* width:100px;*/ -background:#ccc;line-height:50px;border-right:2px solid #e5e5e5;/* margin:4px 1px 0 0;*/}
+.app_nvs_in{line-height:30px;padding-left:20px;color:#333;border-radius:20px}
+.app_nv_subt{width:25px;height:25px;background:url("../images/app/sou19.png") no-repeat;position:relative;top:12px;left:-30px;border:none}
+/*----------	应用内容	----------*/
+#app-centent{width:860px;height:100%;-background:#f8f8f8;-margin:10px auto 0;overflow:auto;-overflow:hidden}
+#app section{width:calc(100% - 102px);height:calc(100% - 50px);overflow:auto}
+#app-gonggao{width:100%;height:30px;background:#fff;color:red;font-size:14px}
+#app-gonggao a{line-height:30px;color:red;padding-left:10px;font-size:14px;color:#06C;cursor:pointer}
+#f1, #f2{width:830px;height:350px}
+.app-frame-z{width:600px;height:100%;background:#F3F3F3}
+.app-frame-title{width:100%;height:30px;line-height:30px;background:#BCBCBC;border-bottom:1px solid blue}
+.app-frame-title h4{float:left;margin-left:20px}
+.app-frame-y{width:220px;height:100%;background:#F3F3F3}
+.app-ol-y li i{width:25px;height:25px;padding:0 10px;border:1px solid #D9D9D9}
+.app-ol-y li a{line-height:30px}
+.app-ol-y li:hover{background:rgba(0, 0, 0, 0.3);line-height:50px}
+.app-ul{-padding-top:22px}
+.app-ul li{width:88px;height:100px;float:left;text-align:center;overflow:hidden;margin:6px 6px 0}
+.app-ul li:hover{background:rgba(0, 0, 0, 0.3)}
+/*----------	应用列表	----------*/
+.app article{width:830px;background:#ddd;display:block;-display:none}
+.app-fenlei-title{width:100%;border-bottom:2px solid #bcbcbc}
+.app-fenlei-title a{line-height:40px;width:90px;height:100%;text-align:center;font-size:14px;font-weight:550;display:inline-block}
+.app-fenlei-title a:hover{color:#44C738;border-bottom:2px solid #44C738}
+.app article li{width:100%;height:70px;border-bottom:1px solid #bcbcbc}
+.app article li:hover{background:rgba(0, 0, 0, 0.03)}
+.app article li img{width:48px;height:48px;margin:10px 20px;float:left}
+.app-info{float:left;width:382px;font-size:12px;color:#333;-margin:0 24px}
+.app-title{font-size:14px;line-height:35px;font-weight:700}
+.app-des{color:#616161;height:34px;line-height:25px}
+.app-star{line-height:70px;font-size:30px;color:red;margin:0 30px}
+.app-size{line-height:70px}
+.app-down{width:70px;height:24px;float:right;margin:20px 40px;display:block;background:url("http://img1sw.baidu.com/statics/rj/v4.0.0/imgs/list_download-2a60617b.png") top left no-repeat}
+.app-down:hover{background-position:0 -24px;background-position:0 -48px}
+/*----------	分页	----------*/
+.fenye{width:100%;line-height:70px;text-align:center}
+.fenye a{margin:0 3px;border:1px solid #3EB140;padding:5px 10px}
+.fenye a:hover{color:red;border:1px solid red}
+.fenye .active{color:#fc8e00;cursor:default}
+.page a .active{color:#fc8e00;cursor:default}
+/*----------	应用详情页	----------*/
+#app-detail{width:830px;background:#ddd;display:block;-display:none}
+.app-detail-head{width:100%;height:40px;background:#E8F6FE;border-bottom:2px solid #CDCDCD}
+.app-detail-head .back{font-size:14px;padding:5px 20px;margin:5px;background:#E3E3E3;border:1px solid #CDCDCD;-float:left}
+.app-detail-head .back:hover{border:1px solid #48C93D}
+.app-detail-head span a{font-size:12px;line-height:40px;margin:0 10px;color:#359bed}
+.app-pic{width:300px;height:230px;margin:30px 40px;-border:1px solid red;display:inline-block}
+.app-pic img{width:300px;height:230px;display:none}
+.app-infos{width:360px;height:230px;margin:30px 40px;-border:1px solid red;display:inline-block}
+.app-infos p{line-height:30px}
+.app-infos-title{font-size:14px;font-weight:700}
+.app-install{margin:10px 40px;padding:10px 20px;background:#96D6FA;border:1px solid #0099CC;float:right;font-weight:700}
+.app-install:hover{background:rgba(0, 0, 0, 0.02);border:2px solid #0099CC}
+.app-pics{width:100%;height:90px;-border:1px solid red}
+.app-pics li img{width:100px;height:70px;margin:5px 33px;float:left}
+.app-for-short{width:100%;margin:20px 0;-overflow:hidden}
+.app-for-short-title{font-size:14px;font-weight:700;height:40px;line-height:30px}
+.app-for-short p{text-indent:2em}
+.messages{font-size:12px;line-height:24px;color:#666}
+.m_link{color:#359bed}
+.detail_main .softSet ul{float:left;width:576px;padding:24px 0 0}
+.detail_main .softSet li{width:88px;margin-right:2px;text-align:center;float:left}
+.detail_main .softSet li img{width:48px;height:48px;padding:0 20px}
+#app-wrap{width:830px;height:150px;margin:20px 0;position:relative;overflow:hidden;-border:1px solid red}
+#app-wrap p.title{font-size:14px;font-weight:700;height:40px;line-height:40px;text-indent:2em;border-bottom:1px dotted red}
+.app-wrap{width:750px;height:90px;margin:20px auto 0}
+.app-wrap li{width:88px;height:90px;margin:0 17px 50px;float:left;-border:1px solid red}
+.app-wrap li img{width:48px;height:48px;padding:0 20px;display:inline-block}
+.app-wrap li a{}
+.app-wrap li a.word{width:100%;height:24px;line-height:24px;font-size:12px;text-align:center;display:inline-block;overflow:hidden}
+.app-wrap li a.download{visibility:visible;width:70px;height:24px;
+    display:none;
+    background: url("http://img1sw.baidu.com/statics/rj/v4.0.0/imgs/rj_detail-32bda953.png") no-repeat -100px 0;
+}
+.app-wrap li a.download:hover{background-position:-100px -24px;display:block}
+#app-wrap span{width:12px;height:24px;position:absolute;top:90px;z-index:2;background:url("http://img1sw.baidu.com/statics/rj/v4.0.0/imgs/rj_common-f1ceb122.png") no-repeat;display:block}
+#app-wrap .lc{left:20px;background-position:0 -228px}
+#app-wrap .rc{right:20px;background-position:-48px -228px}
+#app-wrap .lc:hover{background-position:-15px -228px}
+#app-wrap .rc:hover{background-position:-64px -228px}
+#app-topic{}
+#app-wrap2{width:830px;height:150px;margin:20px 0;overflow:hidden}
+#app-wrap2 .topic_title{font-size:14px;font-weight:700;height:40px;line-height:40px;text-indent:2em;border-bottom:1px dotted red}
+#app-wrap2 .more{font-size:12px;margin-right:10px}
+#app-wrap2 ul{width:750px;height:150px;margin:20px auto 0;-border:1px solid red}
+#app-wrap2 li{float:left;margin:0 13px}
+#app-wrap2 li a{text-align:center}
+#app-wrap2 li img{width:160px;height:80px;display:inline-block}
+#app-wrap2 li p{-width:127px;font-size:12px;line-height:20px;text-align:center;color:#666}
+/*----------	应用广告	----------*/
+.app-ad{width:830px;height:50px;line-height:50px;text-align:center;color:red;font-size:20px;border:1px solid blue;border-radius:8px;margin:20px 0;-background:blue}
+footer{width:830px;height:50px;line-height:50px;background:#ddd;text-align:center}
+/****************************************************************************/
+/*----------------------------------------		App Store 应用商店		----------------------------------------*/
+#app{width:100%;height:100%}
+/*----------	应用头部	----------*/
+#app nav{width:100%;height:50px;background:#48C93D;-border-radius:10px 10px 0 0;color:#fff;position:relative}
+#app nav .app-avatar{width:100px;height:50px;-border:1px solid red}
+#app nav .app-avatar img{width:44px;height:44px;padding:1px;margin:0 26.5px;border:2px solid transparent;border-radius:50px}
+#app nav .app-avatar img:hover{-padding:2px;-background:#fff;border:2px solid #fff}
+#app nav a{display:inline-block;font-size:14px;color:#fff;padding:0 12px;line-height:50px}
+#app nav a:hover, .app-lia{background:rgba(0, 0, 0, 0.3)}
+/*----------	应用搜索	----------*/
+.app-search{width:200px;height:22px;margin:15px 15px 0;background:#fff;border-radius:10px;display:block}
+.app-search input{width:165px;height:22px;padding-left:5px}
+.app-search img{float:right;margin:2px 5px}
+.app-search img:hover{-border-radius:10px;-border:1px solid transparent}
+/*----------	应用侧边栏	----------*/
+#app aside{width:100px;height:calc(100% - 70px);padding:10px 0;background:#ccc;border-right:2px solid #e5e5e5}
+#app aside a{line-height:35px;display:block}
+#app aside a:hover{-background:rgba(0, 0, 0, 0.3);color:#3fa0ee}
+#app aside a i{width:16px;height:16px;margin:0 5px 0 10px;background:url(../images/app/sort_icon.png) no-repeat;display:inline-block;vertical-align:middle}
+#app aside .icon-myapp{background-position:0 -28px}
+#app aside .icon-ranking{background-position:0 -28px}
+#app aside .icon-allapp{background-position:0 -28px}
+#app aside .icon-chatting{background-position:0 2px}
+#app aside .icon-video{background-position:0 -148px}
+#app aside .icon-music{background-position:0 -178px}
+#app aside .icon-picture{background-position:0 -208px}
+#app aside .icon-office{background-position:0 -358px}
+#app aside .icon-life{}
+#app aside .icon-game{background-position:0 -88px}
+#app aside .icon-tool{background-position:0 -298px}
+#app aside .icon-other{background-position:0 -28px}
+#app aside .icon-appdetail{}
+.app_nvs{line-height:50px;margin:7px 30px 0}
+.app_nvs_in{line-height:30px;padding:0 20px 0 0;color:#333;border-radius:20px}
+.app_nv_subt{width:25px;height:25px;border:none;background:url("../images/app/sou19.png") no-repeat;position:absolute;top:18px;right:30px}
+/* 侧边栏，不用*/
+#dev_aside{width:120px;height:100%;-background:#293038;border-right:2px solid #e5e5e5}
+#dev_aside li{line-height:40px;font-size:14px}
+#dev_aside li:hover{-background:#22282E;background:rgba(0, 0, 0, 0.3)}
+#dev_aside li i{width:18px;height:18px;margin:0 10px;background:url(../images/developer/sidebar-icon.png) no-repeat;display:inline-block;vertical-align:middle}
+#dev_aside .icon-back{background-position:-107px -147px}
+#dev_aside .icon-whole{background-position:0 -0px}
+#dev_aside .icon-app{background-position:0 -21px}
+#dev_aside li a{padding-left:20px;color:#333}
+#dev_aside li span{width:30px;height:30px;border:1px solid red}
+/*----------	应用内容	----------*/
+#f1, #f2{width:830px;height:350px}
+.app-frame-z{width:600px;height:100%;background:#F3F3F3}
+.app-frame-title{width:100%;height:30px;line-height:30px;background:#BCBCBC;border-bottom:1px solid blue}
+.app-frame-title h4{float:left;margin-left:20px}
+.app-frame-y{width:220px;height:100%;background:#F3F3F3}
+.app-ol-y i{width:25px;height:25px;padding:0 10px;border:1px solid #D9D9D9}
+.app-ol-y a{width:100%;height:30px;line-height:30px;display:block}
+.app-ol-y a:hover{background:rgba(0, 0, 0, 0.3);height:50px;line-height:50px}
+.app-ul{-padding-top:22px}
+.app-ul a{width:88px;height:100px;float:left;text-align:center;overflow:hidden;margin:6px 6px 0;display:block}
+.app-ul a:hover{background:rgba(0, 0, 0, 0.3)}
+/*----------	应用列表	----------*/
+#app #applists{width:100%;height:100%;-background:#ddd;-display:block;-display:none}
+#app .app-fenlei-title{width:100%;border-bottom:2px solid #bcbcbc}
+#app .app-fenlei-title a{line-height:40px;width:90px;-height:100%;text-align:center;font-size:14px;font-weight:550;border-bottom:2px solid transparent;display:inline-block}
+#app .app-fenlei-title a:hover{color:#44C738;border-bottom:2px solid #44C738}
+#applists li{width:100%;height:70px;min-width:640px;border-bottom:1px solid #bcbcbc}
+#applists li:hover{background:rgba(0, 0, 0, 0.03)}
+#applists li img{width:48px;height:48px;margin:10px 20px;float:left}
+#app .app-info{float:left;width:50%;font-size:12px;color:#333;-margin:0 24px}
+#app .app-title{font-size:14px;line-height:35px;-font-weight:700}
+#app .app-des{color:#616161;height:34px;line-height:25px}
+#app .app-star{line-height:70px;font-size:30px;color:red;margin:0 30px}
+#app .app-size{line-height:70px}
+#app .app-down{width:70px;height:24px;float:right;margin:20px 40px;display:block;background:url("http://img1sw.baidu.com/statics/rj/v4.0.0/imgs/list_download-2a60617b.png") top left no-repeat}
+#app .app-down:hover{background-position:0 -24px;background-position:0 -48px}
+#app .app-add{width:70px;height:25px;line-height:25px;margin:0 40px;text-align:center;color:#fff;display:inline-block;background:#3EB140;border-radius:4px}
+#app .app-add:hover{}
+/*----------	分页	----------*/
+.fenye{width:100%;line-height:70px;text-align:center}
+.fenye a{margin:0 3px;border:1px solid #3EB140;padding:5px 10px}
+.fenye a:hover{color:red;border:1px solid red}
+.fenye .active{color:#fc8e00;cursor:default}
+.page a .active{color:#fc8e00;cursor:default}
+/*----------	应用详情页	----------*/
+#app #detail{width:100%;background:#EAEDF1}
+#app #detail .head{width:100%;height:40px;background:#EAEDF1;border-bottom:2px solid #CDCDCD}
+#app #detail .head .back{width:70px;height:27px;line-height:27px;margin:5px 20px;font-size:14px;text-align:center;background:#E3E3E3;border:1px solid #CDCDCD;border-radius:6px;display:inline-block}
+#app #detail .head .back:hover{border:1px solid #48C93D}
+#app #detail .head span a{font-size:12px;line-height:40px;margin:0 10px;color:#359bed}
+.preview{width:300px;height:230px;margin:30px 50px;display:inline-block;position:relative}
+.preview img{width:300px;height:230px}
+#app #detail .but{width:40px;height:60px;color:#48C93D;font-size:50px;text-align:center;line-height:55px;position:absolute;top:calc(50% - 45px);cursor:pointer}
+#app #detail .but:hover{background:rgba(0, 0, 0, 0.2)}
+.app-infos{width:360px;height:230px;margin:30px 40px;-border:1px solid red;display:inline-block}
+.app-infos p{line-height:30px}
+.app-infos-title{font-size:14px;font-weight:700;display:inline-block}
+.app-install{width:100px;height:30px;line-height:30px;margin:20px 30px;text-align:center;font-weight:700;background:#96D6FA;border:1px solid #0099CC;border-radius:10px;display:block}
+.app-install:hover{background:rgba(0, 0, 0, 0.02);border-color:#0099CC}
+.app-pics{width:100%;height:90px;-border:1px solid red}
+.app-pics li img{width:100px;height:70px;margin:5px 33px;float:left}
+.app-for-short{width:100%;margin:20px 0;-overflow:hidden}
+.app-for-short-title{font-size:14px;font-weight:700;height:40px;line-height:30px}
+.app-for-short p{text-indent:2em}
+.messages{font-size:12px;line-height:24px;color:#666}
+.m_link{color:#359bed}
+.detail_main .softSet ul{float:left;width:576px;padding:24px 0 0}
+.detail_main .softSet li{width:88px;margin-right:2px;text-align:center;float:left}
+.detail_main .softSet li img{width:48px;height:48px;padding:0 20px}
+#app-wrap{width:830px;height:150px;margin:20px 0;position:relative;overflow:hidden;-border:1px solid red}
+#app-wrap p.title{font-size:14px;font-weight:700;height:40px;line-height:40px;text-indent:2em;border-bottom:1px dotted red}
+.app-wrap{width:750px;height:90px;margin:20px auto 0}
+.app-wrap li{width:88px;height:90px;margin:0 17px 50px;float:left;-border:1px solid red}
+.app-wrap li img{width:48px;height:48px;margin:0 20px;border-radius:10px;display:inline-block}
+.app-wrap li p{text-align:center}
+.app-wrap li a.word{width:100%;height:24px;line-height:24px;font-size:12px;text-align:center;display:inline-block;overflow:hidden}
+#app-wrap span{width:12px;height:24px;position:absolute;top:90px;z-index:2;background:url("http://img1sw.baidu.com/statics/rj/v4.0.0/imgs/rj_common-f1ceb122.png") no-repeat;display:block}
+#app-wrap .lc{left:20px;background-position:0 -228px}
+#app-wrap .rc{right:20px;background-position:-48px -228px}
+#app-wrap .lc:hover{background-position:-15px -228px}
+#app-wrap .rc:hover{background-position:-64px -228px}
+#app-topic{}
+#app-wrap2{width:830px;height:150px;margin:20px 0;overflow:hidden}
+#app-wrap2 .topic_title{font-size:14px;font-weight:700;height:40px;line-height:40px;text-indent:2em;border-bottom:1px dotted red}
+#app-wrap2 .more{font-size:12px;margin-right:10px}
+#app-wrap2 ul{width:750px;height:150px;margin:20px auto 0;-border:1px solid red}
+#app-wrap2 li{float:left;margin:0 13px}
+#app-wrap2 li a{text-align:center}
+#app-wrap2 li img{width:160px;height:80px;display:inline-block}
+#app-wrap2 li p{-width:127px;font-size:12px;line-height:20px;text-align:center;color:#666}
+/*----------	应用广告	----------*/
+#app .app-ad{width:830px;height:50px;line-height:50px;text-align:center;color:red;font-size:20px;border:1px solid blue;border-radius:8px;margin:20px 0}
+/*----------	应用评论	----------*/
+#detail .comment-box{width:100%}
+.topic_title{font-size:14px;font-weight:700;height:40px;line-height:40px;text-indent:2em;border-bottom:1px dotted red}
+#detail .comment-box textarea{width:calc(100% - 100px);height:100px;margin:20px auto;display:block;border:1px solid #c1e5fb}
+.commentOn textarea{font-family:Tahoma;overflow-x:hidden;overflow-y:auto;width:740px;height:100px;color:rgb(122, 122, 122);display:inline;padding:8px;border:1px solid #c1e5fb}
+#detail .comment-box .list_box{width:calc(100% - 100px);margin:20px auto}
+#detail .comment-box .list_box ul li{width:96%;height:80px;border-top:1px solid blue;margin:0 auto;padding:10px 0}
+#detail .list_box .user_avatars{width:50px;height:50px;padding:1px;margin:0 25px 0 0;border:2px solid transparent;border-radius:50px}
+#detail .list_box .username{color:#3ca0cb;font-weight:bold}
+#detail .list_box .content_info{}
+#detail .list_box.text-cont{color:#999999;background:#ffffff;margin-left:60px;padding:10px 0}
+#detail .list_box .moreBtn{width:300px;height:35px;border:1px solid blue;border-radius:10px;text-align:center;line-height:35px;font-size:15px;margin:0 auto}
+/*----------------------------------------		Developer 开发者中心		----------------------------------------*/
+#developer{width:100%;height:100%}
+#developer header{width:100%;height:40px;line-height:40px;background:#15203D;-margin-bottom:10px;overflow:hidden}
+#developer header .logo{width:88px;height:31px;margin:5px 20px 0 20px;text-indent:-999px;background:url("../images/logo.png");overflow:hidden}
+#developer header ul li{float:left;font-size:14px}
+#developer header ul li a{color:#FFF;width:100%;padding:0 12px;-display:inline-block}
+#developer header ul li:hover{background:rgba(0, 0, 0, 0.5)}
+#developer section{width:100%;height:calc(100% - 40px);background:#EAEDF1;overflow:auto}
+#developer section #notes{width:100%;height:30px;background:#fff;color:red;font-size:14px}
+#developer section #notes a{line-height:30px;color:red;padding-left:10px}
+#developer section .user{width:100%;height:180px;-margin:15px;background:blue;-display:none}
+#developer section .user img{width:120px;height:120px;padding:10px;margin:19px;background:#fff;display:inline-block;border:1px solid #FFB32C;border-radius:100px}
+#developer section img:hover{background:#5C6075}
+#developer section .account, #developer section .todo{width:calc(50% - 150px);height:100%;margin:0 20px 0 20px;background:#314F85;display:inline-block}
+/*	主区域	*/
+#developer #overview article{width:calc(100% - 120px);height:100%}
+#developer #overview div.title-box{padding:20px 0;font-size:13px;-position:relative;height:100px;border-bottom:1px solid #DADADA}
+#developer #overview div.title-box span{width:200px;height:60px;padding:0 40px;line-height:30px;display:inline-block}
+#trend{width:800px;height:300px;margin:20px auto;border:1px solid blue}
+#developer #overview .forecast{margin-top:10px;display:table}
+#developer #overview .forecast-list{width:170px;height:150px;padding:5px 10px;display:inline-block;border:1px solid blue;background:#C3C6C9;margin:5px 10px}
+#developer #overview .forecast-list p.title{font-size:13px;line-height:3;color:#333}
+#developer #overview .forecast-list p.data{font-size:34px;font-weight:bold;color:#333}
+#developer #overview .forecast-list p.action{font-size:13px;text-decoration:none}
+#developer #overview .forecast-list p.action a{color:#0088cc;text-decoration:none}
+#service-area{width:calc(100% - 30px);height:200px;background:#fff}
+.shortcut{display:block;margin-bottom:20px;width:120px;font-size:16px}
+.btn-link{display:inline-block;margin-bottom:10px;padding:5px 16px;background:#2c9445;border-radius:5px;font-size:14px;color:#fff;text-align:center}
+#link-area{width:180px;height:80px;margin:20px 18px}
+#app-area{margin-top:1px;padding-top:19px;/* border-top:1px solid #6fc784;*/}
+.filter-area{height:36px}
+.app-list{min-height:500px}
+.warning-area{width:100%;height:200px;margin-top:20px;background:#fff;font-size:18px;line-height:200px;text-align:center;color:#999}
+#app_list{width:calc(100% - 50px);margin:15px auto;border:1px solid blue}
+#app_list li{border-top:1px solid #dddddd}
+#app_list li span{display:inline-block;padding:10px 0 10px 15px}
+#app_list .empty{text-align:center;padding:80px 0;border:1px solid #636363}
+#app_list .empty a{width:100px;height:35px;margin:20px 20px;text-align:center;line-height:35px;font-size:16px;background:#f5f5f5;border:1px solid #CDCDCD;border-radius:4px;color:#636363;display:inline-block}
+#app_list .title{background:#C4C7CA}
+#app_list .app_id{width:50px}
+#app_list .app_key{width:100px}
+#app_list .app_name{width:100px}
+#app_list .app_state{width:80px}
+#app_list .app_class{width:80px}
+#app_list .app_time{width:100px}
+#app_list .app_notes{width:200px}
+#app_list .app_manage{width:200px}
+#app_list .app_manage a{padding:0 5px}
+#developer .create{padding:10px 50px 20px}
+#developer .create a{width:100px;height:30px;color:#ffffff;background:#0044cc;cursor:default;opacity:0.65;display:inline-block;font-size:14px;line-height:30px;text-align:center;border-radius:4px}
+/*----------	Overview 应用概述	----------*/
+#overview{width:100%;height:calc(100% - 40px)}
+#overview aside{width:118px;height:100%;-background:#293038;border-right:2px solid #e5e5e5}
+#overview aside li{line-height:40px;font-size:14px}
+#overview aside li:hover{-background:#22282E;background:rgba(0, 0, 0, 0.3)}
+#overview aside ul i{width:18px;height:18px;margin:0 10px;background:url(../images/developer/sidebar-icon.png) no-repeat;display:inline-block;vertical-align:middle}
+#overview aside .icon-back{background-position:-107px -147px}
+#overview aside .icon-whole{background-position:0 -0px}
+#overview aside .icon-app{background-position:0 -21px}
+#overview aside li a{padding-left:20px;color:#333}
+#overview aside li span{width:30px;height:30px;border:1px solid red}
+/*----------	CreateApp 创建应用	----------*/
+#createapp{width:100%;height:100%}
+#stepnav{height:50px;padding:0 50px;background:#0A54B5}
+#stepnav a{margin:7px 20px;line-height:35px;color:#b9b9b9;display:inline-block;vertical-align:top}
+#stepnav a span{width:30px;height:30px;margin:0 10px 0 0;line-height:30px;color:#b9b9b9;font-size:27px;text-align:center;display:inline-block;vertical-align:top;border:3px solid #b9b9b9;border-radius:40px}
+#stepnav a b{width:70px;height:30px;font-size:16px;display:inline-block}
+#stepnav .action{width:60%;color:#fff}
+#stepnav .action span{color:#fff;border:3px solid #fff}
+#apply{width:100%;height:calc(100% - 50px);overflow:auto}
+.apply_setp{
+    border:1px solid #E6E6E6;background:#FFF;
+    margin: 20px 50px -1px;
+}
+#apply .apply_title{line-height:22px;background-color:#FAFAFA;padding:14px 0 14px 50px;border-bottom:1px solid #E6E6E6}
+#apply li{margin:20px}
+#apply label{width:75px;height:30px;line-height:30px;margin:0 0 0 10px;display:inline-block;vertical-align:top}
+#apply input{width:430px;height:30px;text-indent:1em;display:inline-block;border:1px solid #E6E6E6}
+#apply .setp-input{width:430px;height:30px;text-indent:1em;display:inline-block;border:1px solid #E6E6E6}
+#apply .file-input{-width:300px;-height:20px}
+#apply textarea{width:630px;height:150px;line-height:25px;text-indent:1em;display:inline-block;border:1px solid #DCDCDC}
+#apply select{width:108px;height:30px;border:1px solid #DCDCDC;border-radius:5px;padding-left:8px;-text-indent:1em}
+.copyimg{width:170px;border:1px solid #DCDCDC}
+.formtips{width:130px;height:20px;position:relative;left:600px;bottom:25px}
+.nextsetp{width:150px !important;height:30px !important;margin:20px 0 20px 120px;line-height:30px;background:#FE9D1F;border:1px solid #BCBCBC;border-radius:10px;text-indent:0 !important}
+#app_icon{}
+#app_icon a{width:120px;height:120px;border:1px solid #A4A4C3;border-radius:15px;display:inline-block;
+    background: url(../images/home/increase.png) -123px -53px;
+}
+#app_icon img{}
+#app_icon input{width:150px;height:40px;position:relative;bottom:70px;right:-20px;border:1px solid blue;border-radius:10px}
+#app_pics{width:200px;height:120px;border:1px solid #dcdcdc}
+#app_pic span{width:300px;height:180px;margin:20px 50px;border:1px solid #A4A4C3;border-radius:15px;display:inline-block;
+    background: url(../images/home/increase.png) -35px -20px;
+}
+#app_pic input{width:300px;height:40px;line-height:40px;position:relative;top:140px;right:0;;border-radius:0 0 15px 15px;background:rgba(0, 0, 0, 0.3);-display:none;-visibility:hidden}
+#app_pic span:hover > #app_pic span input{visibility:visible !important;-display:inline-block !important}
+#apply .dosubmit{border-top:1px dotted #b2b2b2}
+/*----------	MyApp 我的应用	----------*/
+#myapp ul li{width:60px;height:77px;margin:10px;padding:5px;border:1.5px solid transparent;position:relative;display:inline-block}
+#myapp ul li:hover{background:rgba(222, 222, 222, 0.5);border:1.5px solid #D9D9D9}
+#myapp ul li img{padding:1px;border-radius:10px;margin:0 8px}
+#myapp ul li p{width:65px;height:38px;line-height:20px;text-align:center;-color:#fff;display:inline-block;overflow:hidden;text-overflow:ellipsis;-text-shadow:-1px -1px 6px #808080;white-space:nowrap;z-index:1}
+/*----------	 CRM 客户管理系统	----------*/
+#crm{width:100%;height:100%;border-bottom:none}
+#crm a.logo{width:88px;height:31px;margin:10px 10px 0 20px;text-indent:-999px;background:url("../images/logo/logo.png");overflow:hidden;display:inline-block}
+#crm nav ul{display:inline-block;background:#323232}
+#crm nav ul li{font-size:14px;color:#FFF;padding:0 20px;display:inline-block;cursor:pointer}
+#crm nav ul li:hover{background:#1b222c;border-bottom:2px solid #457efa}
+#crm .action{display:none;-background:#1b222c}
+#crm .action:hover{display:block}
+#crm .user{}
+#crm .car{}
+#crm .scan-qrcode{display:none}
+/*----------	 Cam 监控平台	----------*/
+#cam{width:100%;height:100%;-position:relative}
+#cam #preview{width:100%;height:calc(100% - 40px)}
+#cam #preview ul{width:100%;height:100%;background:rgba(0, 0, 0, 0.7)}
+#cam #preview ul li{width:calc(25% - 5px);height:calc(25% - 5px);display:inline-block;border:1px solid #828d95;color:#fff}
+#cam .ctrl{width:100%;height:40px;border:1px 0 0 1px solid blue;position:absolute;bottom:0;background:rgba(0, 0, 0, 0.3);-display:none;z-index:99}
+#cam .ctrl ul{-width:30%;height:100%;display:inline-block}
+#cam .ctrl:hover{display:block}
+#cam .ctrl ul li{width:30px;height:30px;margin:5px;background:#F0F0F0;display:inline-block;border-radius:10px;border-radius:6px;text-align:center;cursor:pointer}
+#cam .ctrl ul li img{width:100%;height:100%}
+/*----------	 Other 其它类	----------*/
+/*----------	 Video 我的视频	----------*/
+#video{width:100%;height:100%}
+#video #show{width:100%;height:100%;background:#000}
+#video #show:hover > #video .switch{visibility:visible !important}
+#video #ctrl{width:100%;height:30px;position:absolute;top:30px;left:0;-background:#fff}
+#video .ctrl{-width:100%;-height:20px}
+#video .ctrl a{width:50px;height:20px;margin:5px 5px;line-height:20px;text-align:center;color:#fff;display:inline-block;cursor:pointer;border-radius:8px;border:1px solid #D9D9D9;background:rgba(0, 0, 0, 0.2)}
+#videopro{width:100%;height:4px;background:rgba(0, 0, 0, 0.3)}
+/*----------	 Music 我的音乐	----------*/
+#music{width:100%;height:100%;background:url("../images/app/music/photo/walker.png")}
+#music .show{width:100%}
+#music aside{width:300px;height:calc(100% - 30px);background:rgba(0, 0, 0, 0.15)}
+#music aside li a{width:100%;height:100%;line-height:24px;display:block}
+#music article{width:400px;height:calc(100% - 30px);background:rgba(0, 0, 0, 0.2)}
+#music .control{width:100%;height:30px;position:absolute;top:300px;left:0;background:#fff}
+#music .pro{width:100%;height:10px;background:rgba(0, 0, 0, 0.3)}
+#music .ctrl{-width:100%;-height:20px}
+#music .ctrl a{width:50px;height:20px;margin:0 5px;line-height:20px;text-align:center;color:#fff;display:inline-block;cursor:pointer;border-radius:8px;border:1px solid #D9D9D9;background:rgba(0, 0, 0, 0.2)}
+/*----------	 picture 我的图片	----------*/
+#picture{width:100%;height:100%}
+#picture .zone{width:100%;height:calc(100% - 50px)}
+#picture .zone .show{max-width:100%;max-height:100%;vertical-align:middle;margin:0 auto;display:block;cursor:pointer}
+#picture .switch{width:100%;height:50px;background-color:#000;opacity:.5;filter:alpha(opacity=50);position:absolute;z-index:0;bottom:0}
+#picture .switch ul{width:400px;height:30px;border:1px solid blue;border-radius:10px;margin:4px auto;text-align:center}
+#picture .switch ul li{width:18px;height:18px;display:inline-block;margin:6px 10px;cursor:pointer}
+#assist{width:300px;height:450px;background:#fff;border:1px solid #50CA64}
+#topcontrol{z-index:999}
+#topcontrol a{display:block;width:54px;height:41px;background:url(scrolltotop.gif) no-repeat 0 0}
+#topcontrol a:hover{display:block;width:54px;height:41px;background:url(scrolltotop.gif) no-repeat -54px 0}
+.zeng_msgbox_layer,
+.zeng_msgbox_layer .gtl_ico_succ,
+.zeng_msgbox_layer .gtl_ico_fail,
+.zeng_msgbox_layer .gtl_ico_hits,
+.zeng_msgbox_layer .gtl_ico_clear,
+.zeng_msgbox_layer .gtl_end{display:inline-block;height:54px;line-height:54px;font-weight:bold;font-size:14px;color:#606060;
+    _background-image:url(gb_tip_layer_ie6.png);
+    background: url(gb_tip_layer.png) no-repeat;
+}
+.zeng_msgbox_layer_wrap{width:100%;position:fixed;_position:absolute;top:46%;left:0;text-align:center;z-index:65533}
+.zeng_msgbox_layer{background-position:0 -161px;background-repeat:repeat-x;padding:0 18px 0 9px;margin:0 auto;position:relative}
+.zeng_msgbox_layer .gtl_ico_succ{background-position:-6px 0;left:-45px;top:0;width:45px;position:absolute}
+.zeng_msgbox_layer .gtl_end{background-position:0 0;position:absolute;right:-6px;top:0;width:6px}
+.zeng_msgbox_layer .gtl_ico_fail{background-position:-6px -108px;position:absolute;left:-45px;top:0;width:45px}
+.zeng_msgbox_layer .gtl_ico_hits{background-position:-6px -54px;position:absolute;left:-45px;top:0;width:45px}
+.zeng_msgbox_layer .gtl_ico_clear{background-position:-6px 0;left:-5px;width:5px;position:absolute;top:0}
+.zeng_msgbox_layer .gtl_ico_loading{width:16px;height:16px;border:0;background-image:url(gb_tip_loading.gif);float:left;margin:19px 10px 0 5px}
+.colorTip{display:none;position:absolute;left:50%;top:-30px;padding:6px;background-color:white;font-family:Arial, Helvetica, sans-serif;font-size:11px;font-style:normal;line-height:1;text-decoration:none;text-align:center;text-shadow:0 0 1px white;white-space:nowrap;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px}
+.pointyTip, .pointyTipShadow{border:6px solid transparent;bottom:-12px;height:0;left:50%;margin-left:-6px;position:absolute;width:0}
+.pointyTipShadow{border-width:7px;bottom:-14px;margin-left:-7px}
+.colorTipContainer{position:relative;text-decoration:none !important}
+.white .pointyTip{border-top-color:white}
+.white .pointyTipShadow{border-top-color:#ddd}
+.white .colorTip{background-color:white;border:1px solid #ddd;color:#555}
+.yellow .pointyTip{border-top-color:#f9f2ba}
+.yellow .pointyTipShadow{border-top-color:#e9d315}
+.yellow .colorTip{background-color:#f9f2ba;border:1px solid #e9d315;color:#5b5316}
+.blue .pointyTip{border-top-color:#d9f1fb}
+.blue .pointyTipShadow{border-top-color:#7fcdee}
+.blue .colorTip{background-color:#d9f1fb;border:1px solid #7fcdee;color:#1b475a}
+.green .pointyTip{border-top-color:#f2fdf1}
+.green .pointyTipShadow{border-top-color:#b6e184}
+.green .colorTip{background-color:#f2fdf1;border:1px solid #b6e184;color:#558221}
+.red .pointyTip{border-top-color:#bb3b1d}
+.red .pointyTipShadow{border-top-color:#8f2a0f}
+.red .colorTip{background-color:#bb3b1d;border:1px solid #8f2a0f;color:#fcfcfc;text-shadow:none}
+.black .pointyTip{border-top-color:#333}
+.black .pointyTipShadow{border-top-color:#111}
+.black .colorTip{background-color:#333;border:1px solid #111;color:#fcfcfc;text-shadow:none}
+.test{background:#808080}

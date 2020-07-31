@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*----------	专题 • Topic	----------*/
+.topic_media ul{}
+.topic_media ul li{-max-width:100%;-height:80vmin;margin:.75rem;
+    border:1px solid #ccc;border-radius:.5rem;position:relative;overflow:hidden;border-bottom:1px solid rgba(0,0,0,.05);min-height:40vmin;
+font-size:14px;position:relative;overflow:hidden;margin:10px;border-radius:2px;
+    background: white;
+    background-clip:padding-box;box-shadow:0 1px 2px rgba(0,0,0,.3)}
+.topic_media ul > li:first-child{margin-top:15px}
+.topic_media ul li a{width:100%;height:100%;display:-webkit-box;}
+.topic_media ul li .media{width:100%;max-height:220px;min-height:100px;-display:-webkit-box;}
+.topic_media ul li .media-title{font-size:18px;line-height:24px;color:#333;display:-webkit-box;-webkit-box-orient:vertical;text-overflow:ellipsis;-webkit-line-clamp:2;
+overflow:hidden;}
+/* 1、文章 */
+.topic_media .topic_media_imageText{}
+.topic_media .topic_media_imageText .pic_cover{width:100%;height:50%;-border-radius:.5rem}
+.topic_media .topic_media_imageText .topic_title{color:#333;padding:.83rem 1rem}
+.topic_media .topic_media_imageText .topic_overview{width:100%;height:4rem;padding:.13rem 1rem;color:#666;margin:5px 0;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;font-size:.85rem}
+/* 2、图片 */
+.topic_media .media img{width:auto;height:auto;max-width:100%;max-height:100%;background-size:cover;}
+/* 3、视频 */
+.video_prev, .videobg{position:absolute;width:150%;height:110%;top:0;background-position:50%;background-size:cover;display:block;-webkit-filter:blur(20px);-moz-filter:blur(20px);-ms-filter:blur(20px);filter:blur(20px);transform:translate(-25%,-5%) scale(1.04);-webkit-transform:translate(-25%,-5%) scale(1.04);}
+.video_prev{background-color:#000;z-index:3;}
+/*---------- 排行榜 • Ranking	----------*/
+.ranking{}
+.ranking-item{}
+.ranking .ranking-item:nth-child(1) > .ranking-serial{color:red}
+.ranking .ranking-item:nth-child(2) > .ranking-serial{color:tomato}
+.ranking .ranking-item:nth-child(3) > .ranking-serial{color:coral}
+.ranking .ranking-item:nth-child(4) > .ranking-serial{color:sandybrown}
+.ranking .ranking-item:nth-child(5) > .ranking-serial{}
+.ranking .ranking-item:nth-child(6) > .ranking-serial{}
+.ranking .ranking-item:nth-child(7) > .ranking-serial{}
+.ranking .ranking-item:nth-child(8) > .ranking-serial{}
+.ranking .ranking-item:nth-child(9) > .ranking-serial{}
+.ranking .ranking-item:nth-child(0) > .ranking-serial{}
+.test{background:brown}

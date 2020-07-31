@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/**********************************************************************************
+* | I Home PHP & Home PHP (C) Zong Inc. Created & Modified by Zong. | *
+* +----------------------------------------------------------------------------+ *
+* | Copyright © 2012-2017 Zong Inc. All Rights Reserved | *
+* +----------------------------------------------------------------------------+ *
+* | Website:( http://www.zongdongyang.com.cn ) | *
+* +----------------------------------------------------------------------------+ *
+* | Author:Zong <zongdongyang@126.com> + *
+* +----------------------------------------------------------------------------+ *
+* | $Date:2015-10-12 10:00:00 $ | *
+* ********************************************************************************/
+/*-----		Chat		-----*/
+.chat{box-shadow:0 0 3px #fff;-background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 0 5px #666;-background:#fff url('../images/imchat/box-bg.jpg') right top no-repeat;-webkit-transition:all 0.5s}
+.chat li{width:100%;height:4rem;border-bottom:1px solid #ccc;-webkit-transition:all 0.5s;-cursor:context-menu;cursor:pointer;display:list-item}
+.chat .avatar{width:3rem;-height:40px;margin:0.5rem;border:1px solid #fff;border-radius:4px;overflow:hidden;-webkit-transition:all 0.5s;display:inline-block}
+.chat .avatar img{width:100%;border-radius:2px;border-radius:20%}
+.chat .notice{position:absolute}
+.chat .info{width:calc(100% - 5rem);height:40px;line-height:20px;-margin:1rem 0;display:inline-block}
+.chat .info span{max-width:155px;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat .info p{-width:216px;-height:27px;line-height:27px;color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.im{width:100%;height:100%;box-shadow:0 0 3px #fff;-background:#fff;border-radius:4px;overflow:hidden;-webkit-transition:all 0.5s}
+.im .top{width:100%;height:100px;background:url('../images/imchat/qq-bg.jpg') left top no-repeat;border-radius:4px 4px 0 0;overflow:hidden}
+.im .top .name{width:100%;height:36px;margin-top:10px}
+.im .top .name span{font-size:20px;text-indent:10px;max-width:140px;line-height:36px;float:left;cursor:pointer}
+.im .top .name dl{float:left;height:36px}
+.im .top .name dd{float:left;width:12px;height:12px;padding:4px;margin:8px 0 8px 8px}
+.im .top .name dd:hover, .im .top .name dt:hover{box-shadow:0 0 2px #000}
+.im .top .name dt{float:left;height:10px;margin:11px 0;padding:2px 2px}
+.im .top .sign{width:260px;margin:0 10px;height:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.im .top .sign input{width:100%;height:17px;background:none;line-height:12px;color:#333;font-size:10px;text-shadow:0 0 2px #fff}
+.im .search{width:260px;height:30px;padding:0 10px;margin-top:7px}
+.im .search input{width:100%;height:30px;line-height:30px;color:#555;background:url('../images/imchat/serch.png') no-repeat 240px center rgba(0, 0, 0, .1)}
+.im .tab{width:100%;height:34px;border-bottom:1px solid #ccc}
+.im .tab li{width:25%;float:left;height:36px;position:relative;border-bottom:3px solid transparent;display:inline-block;cursor:pointer}
+.im .tab span{float:left;width:20px;height:20px;margin:8px 25px}
+.im .tab li i{width:12px;height:6px;position:absolute;bottom:-1px;left:50%;margin-left:-6px}
+.im .tab li:nth-child(1) span{background-image:url('../images/imchat/icon-01.png');background-position:center top}
+.im .tab li span.hover{background-position:center bottom}
+.im .tab li:nth-child(2) span{background-image:url('../images/imchat/icon-02.png');background-position:center top}
+.im .tab li:nth-child(3) span{background-image:url('../images/imchat/icon-03.png');background-position:center top}
+.im .tab li:nth-child(4) span{background-image:url('../images/imchat/icon-04.png');background-position:center top}
+.im .tab li:hover span{background-position:center center}
+.im .action span{background-position:center bottom !important}
+.im .action i{background:url('../images/imchat/qq-xuan-jiao.png')}
+.im .tab .this{border-color:#3FDD86 !important}
+.im .show{display:block !important}
+.im .list{width:100%;height:calc(100% - 165px);border-bottom:1px solid #ccc;overflow-y:scroll;float:left}
+.im .list ul{width:100%;margin-top:-1px;float:left}
+.im .list li{width:100%;height:54px;border-top:1px solid #ccc;-webkit-transition:all 0.5s;-cursor:context-menu;cursor:pointer;display:none}
+.im .list li:hover{background:#fdecaa;background:rgba(255, 0, 0, .05);border-top:1px solid #e8d691}
+.im .list li:hover .avatar{border:1px solid #aacec4}
+.im .list li *{display:inline-block;vertical-align:top}
+.im .list .show li{display:block !important}
+.im .list .title{width:calc(100% - 20px);height:30px;padding:0 10px;cursor:default}
+.im .list .title:hover{background:#e4e4e4}
+.im .list .title *{height:30px;line-height:30px;display:inline-block}
+.im .list .title i{width:20px;background:url('../images/home/open_arrow.png') no-repeat 3px 8px;background-size:16px 16px}
+.im .list .title .arrow{background-image:url('../images/home/open_arrow_fire.png') !important}
+.im .list .title span{vertical-align:top}
+.im .list .title .online-ratio{color:gray;font-size:12px;float:right;padding-right:10px}
+.im .avatar{width:40px;height:40px;margin:6px;border:1px solid #fff;float:left;border-radius:4px;overflow:hidden;-webkit-transition:all 0.5s}
+.im .avatar img{width:100%;border-radius:2px;border-radius:20%}
+.im .info{width:216px;height:40px;-margin-top:7px;line-height:20px;-float:right}
+.im .info span{max-width:155px;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.im .info p{width:216px;height:27px;line-height:27px;color:#999;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+.im .bot{width:100%;height:30px;border-radius:0 0 4px 4px;float:left;background:#f0f3f5}
+.im .bot ul{float:left;width:100%;height:20px;margin:5px 0}
+.im .bot li{height:20px;float:left;margin:0 5px}
+.im .bot li img{width:20px;height:20px;float:left}
+.im .bot li span{line-height:20px;float:left;padding-left:5px}
+/*-----		Chat		-----*/
+.chat{width:100%;height:100%;box-shadow:0 0 3px #fff;-background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 0 5px #666;background:#fbeede url('../images/imchat/box-bg.jpg') right top no-repeat;-webkit-transition:all 0.5s}
+.chat .win{height:83px;width:100%;float:left;border-bottom:1px solid rgba(180, 180, 180, .5)}
+.chat .win .tops{width:440px;float:left;height:42px;margin:4px 0}
+.chat .win .tops .avatar{width:40px;height:40px;border:1px solid #fff;border-radius:3px;margin:0 10px;float:left;overflow:hidden;box-shadow:0 0 3px #999}
+.chat .win .tops .avatar img{width:100%;height:auto}
+.chat .win .tops .name{width:260px;height:24px;line-height:24px;font-size:18px;float:left}
+.chat .win .tops .sign{width:260px;height:18px;line-height:18px;font-size:10px;text-shadow:0 0 2px #fff;float:left}
+.chat .win .menu{width:440px;float:left;height:32px}
+.chat .win .menu li{float:left;height:26px;margin:2px 5px}
+.chat .win .menu li:hover{box-shadow:0 0 3px #666}
+.chat .win .menu span{width:26px;height:26px;float:left}
+.chat .win .menu img{width:26px;height:26px}
+.chat .win .menu i{width:8px;height:26px;margin:0 3px 0 1px;float:left;background:url('../images/imchat/chat/icon-00.png') left center no-repeat}
+/*				*/
+.qq-chat{width:440px;height:510px;background:#fbeede url('../images/imchat/box-bg.jpg') right top no-repeat;border-radius:4px;overflow:hidden;-webkit-transition:all 0.5s}
+.qq-chat-win{position:absolute;width:120px;height:27px;right:0;top:0}
+.qq-chat-win li{width:30px;height:27px;float:left;cursor:pointer;background-image:url('../images/imchat/win.png');-webkit-transition:all 0.5s}
+.qq-chat-win li:hover{background-image:url('../images/imchat/wins.png');background-color:#3a95de}
+.qq-chat-win li:nth-child(1){background-position:left center}
+.qq-chat-win li:nth-child(2){background-position:-30px center}
+.qq-chat-win li:nth-child(3){background-position:-60px center}
+.qq-chat-win li:nth-child(4){background-position:-90px center}
+.qq-chat-win li:nth-child(4):hover{background-color:#ea4848 !important}
+.qq-chat-top{height:83px;width:100%;float:left;border-bottom:1px solid rgba(180, 180, 180, .5)}
+.qq-chat-tops{width:100%;float:left;height:42px;margin:4px 0}
+.qq-chat-t-head{width:40px;height:40px;border:1px solid #fff;border-radius:3px;margin:0 10px;float:left;overflow:hidden;box-shadow:0 0 3px #999}
+.qq-chat-t-head img{width:100%;height:auto}
+.qq-chat-t-name{width:260px;height:24px;line-height:24px;font-size:18px;float:left}
+.qq-chat-t-shuo{width:260px;height:18px;line-height:18px;font-size:10px;text-shadow:0 0 2px #fff;float:left}
+.qq-chat-menu{width:100%;float:left;height:32px}
+.qq-chat-menu li{float:left;height:26px;margin:2px 5px}
+.qq-chat-menu li:hover{box-shadow:0 0 3px #666}
+.qq-chat-menu span{width:26px;height:26px;float:left}
+.qq-chat-menu img{width:26px;height:26px}
+.qq-chat-menu i{width:8px;height:26px;margin:0 3px 0 1px;float:left;background:url('../images/imchat/chat/icon-00.png') left center no-repeat}
+.chat .bot{height:426px;width:calc(100% - 140px);float:left;background:rgba(255, 255, 255, .2)}
+.chat .txt{width:100%;height:327px;line-height:20px;color:#008040;overflow-y:scroll;scrollbar-base-color:#fbeede;scrollbar-track-color:#fbeede;float:left}
+.chat .txt ul{padding:10px 0;float:left;width:100%}
+.chat .txt li{margin:3px 0;float:left;width:100%}
+.chat .my img, .chat .you img{width:32px;height:32px;float:left;margin:0 10px;border-radius:15%}
+.chat .my span, .chat .you span{float:left;margin:0 10px 0 0}
+.chat .ner{width:400px;margin:0 20px;font-size:14px;color:#666}
+.chat .ner img{max-width:100%;max-heiht:260px;height:auto}
+.chat .text{float:left;width:100%;height:135px;border-top:1px solid rgba(180, 180, 180, .5)}
+.chat .text ul{height:28px;float:left;width:100%}
+.chat .text li{float:left;margin:3px 0 3px 5px;height:20px;border:1px solid rgba(0, 0, 0, 0);-webkit-transition:all 0.5s;border-radius:2px}
+.chat .text li:hover{border:1px solid #ccc}
+.chat .text li span{width:20px;height:20px;float:left}
+.chat .text li p{float:left;padding:0 3px;line-height:20px;cursor:context-menu}
+.chat .text li i{width:8px;height:20px;float:left;margin:0 2px;background:url('../images/imchat/chat/icon-00.png') no-repeat center center}
+.chat .text textarea{width:420px;height:69px;max-width:420px;max-height:69px;float:left;margin:0 10px;background:none;line-height:20px;color:#333;font-size:14px;border:none;font-weight:bolder}
+.chat .but span{padding:0 14px;line-height:24px;height:24px;float:right;margin:7px 4px 7px 0;background:#ea4848;border-radius:4px;color:#fff;cursor:pointer}
+.chat .but span:nth-child(1){padding-right:34px;background:#ea4848 url('../images/imchat/chat/fa.png') 60px center no-repeat}
+.chat .show{width:140px;height:463px;background:url('../images/imchat/chat/show.png')}
+/*----------	 Im Chat 我的朋友	----------*/
+.im .chat_tab{width:100%;height:2.5rem;margin:1rem auto;overflow:hidden;border:1px solid #ddd;display:box;display:-ms-box;display:-webkit-box;display:flex;display:-ms-flexbox;display:-webkit-flex;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.im .chat_tab a{line-height:1rem;text-align:center;color:#666;-display:block;filter:alpha(opacity=50);flex:1;-ms-flex:1;-webkit-flex:1;box-flex:1;-ms-box-flex:1;-webkit-box-flex:1;cursor:pointer}
+.im .chat_tab a i{width:20px;height:20px;margin:2px auto 0;display:block}
+.im .chat_tab a i:hover{background-position:0 -40px;-background-size:20px 60px}
+.im .wechat_tab_chat i{background:url('../images/imchat/icon-03.png') no-repeat}
+.im .wechat_tab_friends i{background:url('../images/imchat/icon-02.png') no-repeat}
+.im .wechat_tab_public i{background:url('../images/imchat/icon-04.png') no-repeat}
+.im .wechat_tab_me i{background:url('../images/imchat/icon-01.png') no-repeat}
+.im .wechat_tab_phone i{background:url('../images/imchat/icon-04.png') no-repeat}
+.test{background:yellow}

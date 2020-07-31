@@ -1,0 +1,56 @@
+img {display:inline-block;width:100%;height:100%;}
+.footer {position:fixed;width:100%;left:0;bottom:0;z-index:1000;-height:3.5rem;display:flex;justify-content:space-between;padding:1.16rem 1.46rem;background:#ffffff;box-shadow:0 -0.06rem 0.12rem rgba(0, 0, 0, 0.4);z-index:30;}
+.footer .footer-left {display:flex;flex-direction:column;justify-content:center;font-weight:300;line-height:1.34rem;}
+.footer .footer-left .footer-quantity {font-size:0.26rem;color:#666666;}
+.footer .footer-left .footer-quantity span {color:#ff2929;}
+.footer .footer-left .footer-price {position:relative;font-size:0.28rem;color:#000000;}
+.footer .footer-left .footer-price span {font-size:0.36rem;color:#ff2929;font-weight:400;line-height:0.42rem;}
+.footer .footer-right .footer-button {width:7.5rem;-height:2.8rem;text-align:center;line-height:2.8rem;border-radius:2.8rem;background:#000000;font-size:1.28rem;font-weight:300;color:#ffffff;}
+.reserve {padding:0 1.45rem 5rem 1.49rem;}
+.reserve-title {-font-size:0.32rem;font-weight:500;line-height:1;color:#000000;}
+.reserve-hr {width:100%;border-bottom:0.01rem solid #d4d4d4;}
+.reserve-select select {width:100%;-height:0.68rem;border:0.01rem solid #e4e4e4;background:#ffffff url("https://vs5.jetta.faw-vw.com/activity/pages/reserve/images/arrow_bottom.png") right 0.19rem center no-repeat;background-size:0.23rem 0.13rem;color:#000000;-font-size:0.28rem;font-weight:300;line-height:1.34rem;padding:1.17rem 1.45rem 1.17rem 1.14rem;}
+.reserve-shop-info {padding-top:2.6rem;}
+.reserve-shop-content {display:flex;justify-content:space-between;padding:0.3rem 0;}
+.reserve-shop-content .reserve-shop-img {width:7.89rem;height:7.89rem;margin-right:0.3rem;}
+.reserve-shop-content .reserve-shop-main {flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;}
+.reserve-shop-content .reserve-shop-main .reserve-shop-title {-font-size:0.28rem;font-weight:400;line-height:1.34rem;color:#000000;}
+.reserve-shop-content .reserve-shop-main .reserve-shop-select {width:100%;}
+.reserve-shop-content .reserve-shop-main .reserve-shop-price {-font-size:0.28rem;font-weight:400;-line-height:0.32rem;color:#000000;}
+.reserve-shop-content .reserve-shop-main .reserve-shop-price span {color:#ff2929;}
+.reserve-choose {padding:0.3rem 0;}
+.reserve-choose .reserve-choose-block {display:flex;justify-content:space-between;line-height:2.34rem;margin-bottom:1.38rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-label {font-size:1rem;font-weight:300;line-height:1.34rem;color:#666666;padding-top:1.08rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-label.reserve-choose-label2 {padding-top:0;width:8.7rem;}
+.reserve-choose .reserve-choose-block:last-child {margin-bottom:0;}
+.reserve-choose .reserve-choose-block:last-child .reserve-choose-label {padding-top:0;line-height:0.42rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-item {flex:1;width:4.65rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .trim select {text-align:right;-height:0.34rem;padding:0 1.36rem 0 0;border:none;background:#ffffff url("https://vs5.jetta.faw-vw.com/activity/pages/reserve/images/arrow_right.png") right center no-repeat;background-size:0.13rem 0.23rem;font-size:0.28rem;color:#000000;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-distributor-top {display:flex;justify-content:space-between;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-distributor-top .province {width:10.72rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-distributor-top .city {width:10.68rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-distributor-bottom {margin-top:0.3rem;}
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-address,
+.reserve-choose .reserve-choose-block .reserve-choose-item .reserve-choose-phone {font-size:1.28rem;font-weight:300;line-height:2.42rem;color:#000000;}
+.reserve-choose .tips-con {font-size:0.26rem;color:#999;}
+.reserve-person {padding:1.4rem 0 3rem;}
+.reserve-person .reserve-person-block {display:flex;justify-content:space-between;margin-top:1.54rem;}
+.reserve-person .reserve-person-block .reserve-person-label {flex:1;font-size:1rem;font-weight:300;line-height:2.34rem;color:#666666;}
+.reserve-person .reserve-person-block .reserve-person-item {width:calc(100% - 10.38rem);position:relative;}
+.reserve-person .reserve-person-block .reserve-person-item.reserve-person-addr {position:relative;}
+.reserve-person .reserve-person-block .reserve-person-item.reserve-person-addr textarea {width:100%;line-height:1.52rem;height:1.57rem;border:none;border-bottom:0.01rem solid #d4d4d4;color:#000000;font-size:0.28rem;resize:none;position:relative;top:0;}
+.reserve-person .reserve-person-block .reserve-person-item.reserve-person-addr::after {content:" ";display:block;width:100%;position:absolute;top:50%;left:0;margin-top:-0.1rem;height:0.01rem;background:#d4d4d4;}
+.reserve-person .reserve-person-block .reserve-person-item .valid-btn {position:absolute;right:0;bottom:1.15rem;width:6.9rem;-height:0.64rem;border-radius:0.64rem;border:none;background:#000000;font-size:0.24rem;font-weight:300;color:#ffffff;cursor:pointer;}
+.reserve-input{width:100%;-font-size:0.28rem;font-weight:300;color:#000000;background:#ffffff;border:none;border-bottom:0.01rem solid #d4d4d4;line-height:0.34rem;padding:0 0.23rem 0.13rem 0;}
+.reserve-person-time {width:100% !important;background:#ffffff url("https://vs5.jetta.faw-vw.com/activity/pages/reserve/images/arrow_right.png") right center no-repeat;background-size:0.13rem 0.23rem;}
+.reserve-person-time .el-input__inner {padding:0;border:none;background:none;height:1.34rem;line-height:1.34rem;}
+.reserve-person-time .el-input__suffix,
+.reserve-person-time .el-input__prefix {display:none;}
+.reserve-person-select select {width:100%;border:none;border-bottom:0.01rem solid #e4e4e4;background:#ffffff url("https://vs5.jetta.faw-vw.com/activity/pages/reserve/images/arrow_bottom.png") right 0.19rem center no-repeat;background-size:0.23rem 0.13rem;color:#000000;font-size:0.28rem;font-weight:300;line-height:0.34rem;padding:0 0.45rem 0.13rem 0;}
+.confim-layer {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);z-index:1003;display:flex;justify-content:center;align-items:center;}
+.confim-layer .confim-layer-box {background:#ffffff;width:4.12rem;height:4.95rem;border-radius:0.1rem;overflow:hidden;text-align:center;}
+.confim-layer .confim-layer-box .success-ico {width:0.9rem;height:0.9rem;margin:0.54rem auto 0.4rem;}
+.confim-layer .confim-layer-box .success-title {line-height:1;font-size:0.34rem;font-weight:normal;color:#000000;}
+.confim-layer .confim-layer-box .success-content {font-size:0.24rem;font-weight:normal;color:#999999;line-height:0.36rem;margin-top:0.22rem;}
+.confim-layer .confim-layer-box .success-content a {color:#000000;}
+.confim-layer .confim-layer-box .success-button {width:3.27rem;height:0.76rem;margin:0.38rem auto 0.45rem;line-height:0.76rem;text-align:center;border-radius:0.76rem;background:#000000;font-size:0.28rem;font-weight:normal;color:#ffffff;}

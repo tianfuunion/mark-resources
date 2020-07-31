@@ -1,0 +1,128 @@
+.trend-overview,.trend-overview .trend-overview-online .trend-overview-title-wrapper{margin-bottom:20px}
+.table tbody .sub-line .sub-title .td-content ul li a,.table thead .td-content{display:inline}
+.main-content{border-left:0;border-right:0;background-color:#ececec}
+.content-header{padding-bottom:14px}
+.trend-overview{padding:20px 20px 6px;border:1px solid #e1e3e4;border-radius:2px;background-color:#fff}
+.trend-overview .trend-overview-online{width:240px}
+.trend-overview .trend-overview-online .trend-overview-title-wrapper .trend-overview-title{margin-right:20px;font-size:14px;color:#121315}
+.trend-overview .trend-overview-online .trend-overview-title-wrapper .trend-overview-warning{color:#5d5d61}
+.trend-overview .trend-overview-online .trend-overview-title-wrapper .count-down{font-style:normal;color:#f05654}
+.trend-overview .trend-overview-online .trend-overview-number-wrapper{padding-top:70px;text-align:center}
+.trend-overview .trend-overview-online .trend-overview-number-wrapper .trend-overview-date{font-size:14px;color:#5d5d61;font-family:Arial}
+.trend-overview .trend-overview-online .trend-overview-number-wrapper .trend-overview-number{margin:20px 0;font-size:42px;font-weight:700;color:#323437}
+.trend-overview .trend-overview-online .trend-overview-number-wrapper .trend-overview-info{font-size:12px;color:#5d5d61}
+.trend-overview .trend-overview-chart{margin-left:240px;text-align:center}
+.trend-overview .trend-overview-chart .trend-overview-chart-title{margin-top:30px;font-size:14px;color:#121315}
+.trend-overview .trend-overview-chart .flash-line-container{height:297px}
+.trend-detail{border:1px solid #e1e3e4;border-top:none;border-radius:2px;background-color:#fff}
+.trend-detail .filters{padding:0 20px 5px}
+.trend-detail .filters .filter-content-wrapper{height:auto;line-height:0}
+.trend-detail .filters .filter-content-wrapper #VisitDate .drop-down-level1{left:41px}
+#table-indicator{margin-bottom:0;position:relative}
+.table-filter{margin-top:20px}
+.table .no-expand-col{width:1px}
+.table .sortable{width:auto}
+.table thead .group-title .td-content{text-indent:0}
+.table td{padding-left:8px;padding-right:8px;text-align:left}
+.table td.table-action{text-align:center}
+.table td.table-index{width:0}
+.table td.number-col{padding-left:0;padding-right:0;width:30px}
+.table td#area{width:25px}
+.table td#is_ad{width:35px}
+.table td#visit_pages,.table td#visit_time{width:60px}
+.table td.empty-col{width:1px}
+.table td#keyword,.table td#searchword{width:75px}
+.table td.table-ip,.table td.table-time{width:120px}
+.table td#visitorId{width:140px}
+.table td#visitorId .help{top:1px}
+.table tbody td.ip .operate-btn,.table tbody td.visitorId .operate-btn{position:relative;top:2px;height:14px;background-position:left -2995px;background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-repeat:no-repeat;float:left}
+.table tbody td.tar{text-align:right}
+.detail-table td,.path td,.table tbody td.table-action{text-align:center}
+.table tbody td.ip span{float:left;width:100px}
+.table tbody td.ip .operate-btn{width:18px}
+.table tbody td.sortable{width:auto}
+.table tbody td.visitorId span{float:left;width:120px}
+.table tbody td.visitorId .operate-btn{width:18px}
+.table tbody td.no-indent{padding:0}
+.table tbody td.no-indent .td-content span.icon{top:-9px;left:38px}
+.table tbody .sub-line .sub-title .td-content a.help{top:2px;width:12px}
+.table .asc .td-content,.table .desc .td-content{padding-right:10px}
+@media all and (min-width:1440px){
+.table thead td#visitorId{width:170px}
+.table tbody td.visitorId span{width:150px}
+.table tbody td.access-page{width:275px}
+}
+.visitor-detail{color:#323437}
+.visitor-detail .detail-title,.visitor-detail .path-info table tr.path-title{color:#5d5d61}
+.visitor-detail .client-info{width:300px;border-right:1px solid #dedede}
+.visitor-detail .client-info .device-info{padding:12px;height:90px;border-bottom:1px solid #dedede}
+.visitor-detail .client-info .device-info .device-icon div{height:36px;width:36px;background-repeat:no-repeat}
+.visitor-detail .client-info .device-info .device-icon .pc,
+.visitor-detail .client-info .device-info .device-icon .windows{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3029px}
+.visitor-detail .client-info .device-info .device-icon .android{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3085px}
+.visitor-detail .client-info .device-info .device-icon .ios{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3141px}
+.visitor-detail .client-info .device-info .device-icon .symbian{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3197px}
+.visitor-detail .client-info .device-info .device-icon .other{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3253px}
+.visitor-detail .client-info .device-info .device-data .attributes{padding-left:15px}
+.visitor-detail .client-info .device-info .device-data .attributes li{padding-bottom:6px}
+.visitor-detail .client-info .browser-info{padding:12px;height:90px;border-bottom:1px solid #dedede}
+.visitor-detail .client-info .browser-info .browser-icon div{height:36px;width:36px;background-repeat:no-repeat}
+.visitor-detail .client-info .browser-info .browser-icon .chrome{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3309px}
+.visitor-detail .client-info .browser-info .browser-icon .firefox{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3365px}
+.visitor-detail .client-info .browser-info .browser-icon .diigo{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3421px}
+.visitor-detail .client-info .browser-info .browser-icon .dolphin{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3477px}
+.visitor-detail .client-info .browser-info .browser-icon .liebao{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3533px}
+.visitor-detail .client-info .browser-info .browser-icon .maxthon{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3589px}
+.visitor-detail .client-info .browser-info .browser-icon .opera{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3645px}
+.visitor-detail .client-info .browser-info .browser-icon .other{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3701px}
+.visitor-detail .client-info .browser-info .browser-icon .ie{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3757px}
+.visitor-detail .client-info .browser-info .browser-icon .safari{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3813px}
+.visitor-detail .client-info .browser-info .browser-icon .sogou{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3869px}
+.visitor-detail .client-info .browser-info .browser-icon .taobao{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3925px}
+.visitor-detail .client-info .browser-info .browser-icon .theworld{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -3981px}
+.visitor-detail .client-info .browser-info .browser-icon .uc{background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -4037px}
+.visitor-detail .client-info .browser-info .browser-data .attributes{padding-left:15px}
+.visitor-detail .client-info .browser-info .browser-data .attributes li{padding-bottom:6px}
+.visitor-detail .user_info{-margin-left:300px;padding:12px;height:205px;border-bottom:1px solid #dedede}
+.visitor-detail .user_info .user-icon{height:31px;width:36px;background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png);background-position:left -4093px;background-repeat:no-repeat}
+.visitor-detail .user_info .user-data{margin-left:36px}
+.visitor-detail .user_info .user-data .visitor-type{padding-left:15px;height:100%}
+.anti-failed,.anti-success{padding-left:41px;background-repeat:no-repeat;background-image:url(https://tongji.baidu.com/web/css/decorator/common-538c787335f0149fd92efbe8d255e3fc.png);-background-image:url(https://tongji.baidu.com/web/css/decorator/common-4c8f7328640e0e9cc3f39b0b3631e3fc-ie6.png)}
+.visitor-detail .user_info .user-data .visitor-type li{padding-bottom:10px}
+.visitor-detail .path-info table{width:100%}
+.visitor-detail .path-info table tr td{border-bottom:none}
+.visitor-detail .path-info table tr td a{line-height:1.5}
+.detail-table{table-layout:fixed}
+.visitor-ellipsis{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.anti-success-context,.content-control{margin-top:30px;margin-bottom:30px}
+.anti-title{font-weight:400;font-size:14px;line-height:2}
+.anti-success{width:140px;height:32px;line-height:32px;margin:0 auto;background-position:left -4149px}
+.anti-failed{background-position:left -4201px}
+.anti-content{line-height:2;color:#5b5d61}
+#copy-btn{position:absolute;z-index:999}
+.anti-confirm-content{overflow:hidden}
+.anti-confirm-content .anti-confirm-context{margin-top:5px;line-height:14px;color:#333}
+.anti-confirm-content .anti-confirm-context .anti-item-title{line-height:1.5;color:#787a7d}
+.anti-confirm-content .anti-confirm-context .anti-item{margin-bottom:20px}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-label{float:left;width:65px;color:#5d5d61}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-margin-top{margin-top:2px}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow{overflow:hidden;color:#323437}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow label{margin-right:20px}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow .anti-overflow-text{margin-top:10px;line-height:1.5;color:#787a7d}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow .anti-other{margin-top:20px}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow .anti-other input{width:215px}
+.anti-confirm-content .anti-confirm-context .anti-item .anti-overflow .anti-other label{margin-right:5px}
+#AntiConfirm{margin-right:10px}
+.anti-buttons{margin-bottom:10px}
+.anti-items-wrapper{height:138px}
+.tab-tip{position:relative;top:18px;margin-left:15px;color:#787a7d}
+.table-indicator-tip{position:absolute;top:10px;width:300px;margin-left:132px;color:#787a7d}
+a.disabled{color:#a0a2a5;cursor:default}
+#search-filter-value{width:240px}
+#last_visit_time{width:120px}
+.hm-charts-tooltip{text-align:left}
+#VisitFrequency .drop-down-text,#VisitPage .drop-down-text,#VisitTime .drop-down-text{width:97px}
+#VisitDate .drop-down-text{width:60px}
+#VisitDate .drop-down-text.ellipsis{text-overflow:clip;white-space:normal}
+#VisitHour .drop-down-text{width:68px}
+#access_page{overflow:hidden;text-overflow:ellipsis}

@@ -1,0 +1,34 @@
+.text-drive {background:linear-gradient(360deg, rgba(255, 255, 255, 1) 0%, rgba(239, 240, 242, 1) 100%);padding:0 1.49rem 0 1.46rem;}
+.text-drive .explain {height:2.7rem;line-height:2.7rem;font-size:1.24rem;color:#999999;border-bottom:1px solid #D4D4D4;}
+.text-drive-form {margin-top:2.4rem;}
+.text-drive-form ul li {margin-bottom:2.4rem;}
+.text-drive-form-left {-font-size:0.28rem;color:#666666;display:inline-block;}
+.text-drive-form-right {padding-left:1.3rem;-font-size:0.28rem;color:#000000;display:inline-block;-width:20rem;width:75%;position:relative;}
+.get-code{position:absolute;width:8rem;height:2.5rem;line-height:2.5rem;border-radius:100px;background:#000;color:#fff;font-size:1.18rem;right:0;top:0;text-align:center;}
+.text-drive-form-select {display:flex;}
+.text-drive-form .sel {-font-size:0.28rem;color:#000000;box-sizing:border-box;padding-left:0.2rem;height:2.68rem;line-height:2.68rem;background:url("https://vs5.jetta.faw-vw.com/activity/pages/index/images/arrow-lower.png") #FFFFFF no-repeat center right 0.19rem;background-size:0.23rem 0.13rem;border:1px solid rgba(228, 228, 228, 1);margin-top:0.3rem;}
+.sel:first-child {margin-right:4%;}
+.text-drive-form .sel-small {width:48%;}
+.text-drive-form .sel-big {width:100%;}
+.text-drive-form-right input {background:none;-height:0.6rem;-line-height:0.6rem;-font-size:0.28rem;color:#000000;border:none;border-bottom:1px solid #D4D4D4;width:100%;}
+.text-drive-form-right select {border:none;font-size:0.28rem;color:#000000;width:100%;background:none;}
+.text-drive-bun {width:73%;text-align:center;
+    margin: 1.5rem auto 0;
+}
+.text-drive-bun-foot button {width:100%;background-color:#000000;border-radius:100px;text-align:center;-font-size:0.3rem;color:#FFFFFF;height:2.88rem;line-height:2.88rem;border:none;margin-top:1.45rem;}
+.text-drive-bun-top span {font-size:1.24rem;color:#666666;}
+.text-drive-radio {width:1.32rem;height:1.32rem;border:2px solid #000000;display:inline-block;vertical-align:sub;margin-right:0.5rem;}
+.radioon {background-image:url(../images/radio-bj.png);background-size:100% 100%;border:none;}
+.confim-layer {position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);z-index:1003;display:flex;justify-content:center;align-items:center;}
+.confim-layer-box{background-color:#FFFFFF;width:4.14rem;border-radius:5px;height:3.07rem;text-align:center;}
+.success-title {margin-top:0.58rem;line-height:1;font-size:1.32rem;font-weight:normal;color:#000000;}
+.success-con{margin-top:0.2rem;font-size:1.28rem;color:#000000;margin-bottom:0.3rem;}
+.success-button {width:3.27rem;height:0.76rem;margin:0.38rem auto 0.45rem;line-height:0.76rem;text-align:center;border-radius:0.76rem;background:#000000;font-size:1.28rem;font-weight:normal;color:#ffffff;}
+.pop{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0, 0, 0, 0.7);z-index:1003;display:flex;justify-content:center;align-items:center;}
+.pop .title{position:relative;background:#ffffff;width:5.5rem;height:60%;border-radius:0.1rem;text-align:left;word-wrap:break-word;font-size:0.28rem;color:#000000;padding:0.53rem 0.68rem 0.2rem 0.53rem ;line-height:1.5em;}
+.pop-con{height:80%;overflow:scroll;}
+.pop-con div{font-size:0.32rem;font-weight:bold;}
+.pop-con p{margin:0.3rem 0;}
+.bun{position:absolute;bottom:0.35rem;left:50%;transform:translate(-50%);}
+.bun button{width:3.2rem;height:0.88rem;line-height:0.88rem;border:none;border-radius:100px;background-color:#000000;color:#FFFFFF ;font-size:0.28rem;}
+pre{word-wrap:break-word;}

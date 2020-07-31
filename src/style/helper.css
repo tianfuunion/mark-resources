@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*----------	Help 帮助与文档	----------*/
+.help{-width:80%;max-width:1000px;min-height:800px;margin:1rem auto}
+.help .pannel{margin:0 auto;text-align:center}
+.help .pannel a{margin:20px 10px;padding:10px 30px;font-size:20px;text-align:center;border:1px solid #A8B5BD;border-radius:17px;display:inline-block}
+.help .pannel a:hover{background:#00b7ee}
+.help .box{width:100%;padding:0 30px;margin:20px auto 0;font-size:16px;-border:1px solid #e2e2e2}
+.help h2{line-height:40px;color:#51B400;font-size:16px;padding-left:1rem;margin:0 0 20px 0;border-bottom:1px solid #A8B5BD}
+.help p{line-height:40px;font-size:16px}
